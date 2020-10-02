@@ -1,29 +1,12 @@
-import React, { Component } from "react"
-import { Link } from "gatsby"
+import React from "react"
 
 import Layout from "../components/Layout"
-import Overlay from "../components/Overlay"
 import SEO from "../components/Seo"
 
-export default class IndexPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      showOverlay: false,
-    }
-  }
-  render() {
-    const fromSubpage = this.props.location?.state?.fromSubpage || null
+const About = () => (
+  <Layout>
+    <SEO title="Home" />
+  </Layout>
+)
 
-    return (
-      <Layout onLogoClick={() => this.setState({ showOverlay: true })}>
-        <SEO title="Home" />
-        {(this.state.showOverlay || fromSubpage) && (
-          <Overlay onClose={() => this.setState({ showOverlay: false })}>
-            <Link to="cool-essay">Cool Essay</Link>
-          </Overlay>
-        )}
-      </Layout>
-    )
-  }
-}
+export default About

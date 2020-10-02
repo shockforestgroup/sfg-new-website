@@ -5,13 +5,13 @@ import Layout from "../components/LayoutWithOverlay"
 import SEO from "../components/Seo"
 import OverlayNav from "../components/OverlayNav"
 
-const CoolEssay = () => (
+const EssaysAndWorks = () => (
   <Layout>
     <SEO title="Cool Essay" />
     <OverlayNav />
-    <h1>The Cool Essay</h1>
-    <p>Welcome to page 2</p>
+    Essays and Works!!!
+    <Link to="/cool-essay">Cool Essay</Link>
   </Layout>
 )
 
-export default CoolEssay
+export default EssaysAndWorks

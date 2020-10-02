@@ -8,11 +8,14 @@ const Header = ({ siteTitle, onLogoClick }) => (
       style={{
         margin: 0,
         fontSize: "22px",
+        fontWeight: "300",
         color: `black`,
         textDecoration: `none`,
         cursor: "pointer",
       }}
-      onClick={() => (onLogoClick ? onLogoClick() : navigate("/"))}
+      onClick={() =>
+        onLogoClick ? onLogoClick() : navigate("/essays-and-works")
+      }
     >
       {siteTitle}
     </h1>

@@ -13,6 +13,7 @@ export default ({ children, onClose }) => {
         right: "100px",
         bottom: "40px",
         padding: "40px",
+        opacity: "0.8",
       }}
     >
       {children}
