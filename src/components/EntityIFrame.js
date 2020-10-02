@@ -4,9 +4,14 @@ export default () => {
   return (
     <iframe
       src="https://sfg-entity.netlify.app/"
-      width="100%"
-      height="100%"
-      style={{ border: "none", position: "absolute" }}
+      style={{
+        border: "none",
+        position: "absolute",
+        top: "60px",
+        width: "100vw",
+        height: "calc(100vh - 120px)",
+        bottom: "60px",
+      }}
     ></iframe>
   )
 }
