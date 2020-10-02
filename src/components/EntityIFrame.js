@@ -6,6 +6,7 @@ export default () => {
       src="https://sfg-entity.netlify.app/"
       width="100%"
       height="100%"
+      style={{ border: "none", position: "absolute" }}
     ></iframe>
   )
 }

@@ -12,7 +12,7 @@ export const wrapRootElement = ({ element }) => {
     <>
       <div
         style={{
-          backgroundColor: "black",
+          backgroundColor: "#DCDED5",
           position: "absolute",
           height: "100vh",
           width: "100%",
@@ -22,10 +22,7 @@ export const wrapRootElement = ({ element }) => {
         style={{
           zIndex: 1,
           position: "absolute",
-          top: "50px",
-          left: 0,
-          right: 0,
-          bottom: 0,
+          inset: "50px 0 0",
         }}
       >
         <EntityIFrame />
