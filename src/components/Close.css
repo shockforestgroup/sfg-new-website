@@ -1,0 +1,23 @@
+.close {
+  width: 37px;
+  height: 37px;
+  position: relative;
+  cursor: pointer;
+}
+.close:after {
+  content: "";
+  height: 37px;
+  border-left: 2px solid black;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 16.5px;
+}
+
+.close:before {
+  content: "";
+  height: 37px;
+  border-left: 2px solid black;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 16.5px;
+}

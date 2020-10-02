@@ -16,15 +16,20 @@ const OverlayNav = ({ items }) => (
       fontSize: "22px",
     }}
   >
-    {navItems.map(item => (
-      <Link
-        to={item.link}
-        style={{ color: "inherit" }}
-        activeStyle={{ textDecoration: "none", pointerEvents: "none" }}
-      >
-        {item.title}
-      </Link>
-    ))}
+    <div>
+      {navItems.map(item => (
+        <Link
+          to={item.link}
+          style={{ color: "inherit", padding: "0 33px" }}
+          activeStyle={{
+            textDecoration: "none",
+            pointerEvents: "none",
+          }}
+        >
+          {item.title}
+        </Link>
+      ))}
+    </div>
   </nav>
 )
 

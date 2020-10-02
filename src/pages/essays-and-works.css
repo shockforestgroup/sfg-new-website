@@ -1,0 +1,9 @@
+.essays-and-works__item {
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.essays-and-works__item__link {
+  text-decoration: none;
+  color: inherit;
+}

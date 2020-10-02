@@ -1,6 +1,9 @@
 import React from "react"
 import { navigate } from "gatsby"
 
+import OverlayNav from "./OverlayNav"
+import Close from "./Close"
+
 export default ({ children, onClose }) => {
   return (
     <div
@@ -12,25 +15,21 @@ export default ({ children, onClose }) => {
         left: "100px",
         right: "100px",
         bottom: "40px",
-        padding: "40px",
+        padding: "20px 60px",
         opacity: "0.8",
+        overflow: "scroll",
       }}
     >
+      <div style={{ marginBottom: "105px" }}>
+        <OverlayNav />
+      </div>
       {children}
-      <button
-        style={{
-          position: "absolute",
-          right: "20px",
-          top: "20px",
-          fontSize: 40,
-          cursor: "pointer",
-        }}
+      <Close
+        style={{ position: "absolute", right: "31px", top: "28px" }}
         onClick={() => {
           onClose ? onClose() : navigate("/")
         }}
-      >
-        X
-      </button>
+      />
     </div>
   )
 }

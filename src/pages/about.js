@@ -2,12 +2,11 @@ import React from "react"
 
 import Layout from "../components/LayoutWithOverlay"
 import SEO from "../components/Seo"
-import OverlayNav from "../components/OverlayNav"
 
 const About = () => (
   <Layout>
     <SEO title="Cool Essay" />
-    <OverlayNav />
+    <h1 className="headline-1">About</h1>
     About about about!
   </Layout>
 )
