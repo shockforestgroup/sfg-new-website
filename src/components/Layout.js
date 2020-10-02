@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import "../css/global.css"
 
-const Layout = ({ children, onLogoClick }) => {
+const Layout = ({ children, onLogoClick, style }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,7 +24,14 @@ const Layout = ({ children, onLogoClick }) => {
   `)
 
   return (
-    <div style={{ background: "transparent", height: "100vh" }}>
+    <div
+      style={{
+        background: "transparent",
+        height: 0,
+        width: 0,
+        ...style,
+      }}
+    >
       <Header
         siteTitle={data.site.siteMetadata?.title || `SFG`}
         onLogoClick={onLogoClick}

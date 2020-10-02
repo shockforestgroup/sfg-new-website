@@ -13,7 +13,7 @@ import "../css/global.css"
 
 const LayoutWithOverlay = ({ children }) => {
   return (
-    <Layout>
+    <Layout style={{ width: "100%", height: "100vh" }}>
       {children && (
         <Overlay>
           <main>{children}</main>
