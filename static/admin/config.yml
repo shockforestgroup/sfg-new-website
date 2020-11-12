@@ -6,7 +6,7 @@ public_folder: /assets
 collections:
   - name: article
     label: Article
-    folder: content/articles
+    folder: content
     create: true
     slug: "index"
     path: "{{title}}/index"
