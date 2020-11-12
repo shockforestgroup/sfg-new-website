@@ -8,17 +8,17 @@ import SEO from "../components/Seo"
 import "./essays-and-works.css"
 
 const EssaysAndWorks = ({ data }) => {
-  const essayItems = data.essays.nodes.map(({ frontmatter }) => ({
+  const essayItems = data.essays.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
     author: frontmatter.author,
-    link: "",
+    link: fields.slug,
   }))
-  const workItems = data.works.nodes.map(({ frontmatter }) => ({
+  const workItems = data.works.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
     author: frontmatter.author,
-    link: "",
+    link: fields.slug,
   }))
   return (
     <Layout>
@@ -61,6 +61,9 @@ export const query = graphql`
       filter: { fileAbsolutePath: { regex: "/(essays)/" } }
     ) {
       nodes {
+        fields {
+          slug
+        }
         frontmatter {
           title
           date
@@ -72,6 +75,9 @@ export const query = graphql`
       filter: { fileAbsolutePath: { regex: "/(works)/" } }
     ) {
       nodes {
+        fields {
+          slug
+        }
         frontmatter {
           title
           date
