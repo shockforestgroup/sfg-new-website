@@ -4,8 +4,8 @@ import "./Close.css"
 export default ({ onClick, ...props }) => (
   <div
     {...props}
-    class="close"
-    style={{ ...props.style, color: "red" }}
+    className="close"
+    style={{ ...props.style }}
     onClick={onClick}
   ></div>
 )

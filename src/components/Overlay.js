@@ -13,12 +13,13 @@ export default ({ children, onClose }) => {
         <OverlayNav />
       </div>
       {children}
-      <Close
-        style={{ position: "absolute", right: "31px", top: "28px" }}
-        onClick={() => {
-          onClose ? onClose() : navigate("/")
-        }}
-      />
+      <span className="overlay__close">
+        <Close
+          onClick={() => {
+            onClose ? onClose() : navigate("/")
+          }}
+        />
+      </span>
     </div>
   )
 }

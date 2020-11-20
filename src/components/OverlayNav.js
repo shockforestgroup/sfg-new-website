@@ -1,31 +1,20 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { Link } from "gatsby"
+import "./OverlayNav.css"
 
 const navItems = [
   { title: "Essays/Works", link: "/essays-and-works" },
   { title: "About", link: "/about" },
 ]
 
-const OverlayNav = ({ items }) => (
-  <nav
-    style={{
-      textTransform: "uppercase",
-      display: "flex",
-      justifyContent: "space-around",
-      fontSize: "22px",
-    }}
-  >
+const OverlayNav = () => (
+  <nav className={"overlay-nav"}>
     <div>
       {navItems.map(item => (
         <Link
           to={item.link}
-          style={{
-            color: "inherit",
-            margin: "0 33px",
-            textDecoration: "none",
-            borderBottom: "2px solid black",
-          }}
+          className="overlay-nav__item"
           activeStyle={{
             borderBottom: "none",
             pointerEvents: "none",

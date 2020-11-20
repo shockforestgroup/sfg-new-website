@@ -2,8 +2,10 @@ import { navigate } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import "./Header.css"
+
 const Header = ({ siteTitle, onLogoClick }) => (
-  <header style={{ padding: "41px  63px" }}>
+  <header className="header">
     <h1
       style={{
         margin: 0,

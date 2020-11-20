@@ -8,12 +8,6 @@ body {
 }
 
 .headline-1 {
-  font-size: 30px;
-  font-weight: 400;
-  margin-bottom: 25px;
-}
-
-.headline-2 {
   font-size: 26px;
   font-weight: normal;
   font-family: "Inconsolata";

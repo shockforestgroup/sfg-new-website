@@ -20,13 +20,14 @@ const EssaysAndWorks = ({ data }) => {
     author: frontmatter.author,
     link: fields.slug,
   }))
+
   return (
     <Layout>
       <SEO title="Essays & Works" />
-      <div style={{ display: "flex" }}>
-        <div style={{ flexGrow: 1 }}>
-          <h2 className="headline-2">Essays</h2>
-          <ul className="foobar">
+      <div className="essays-and-works">
+        <section className="essays-and-works__section">
+          <h2 className="headline-1">Essays</h2>
+          <ul className="essays-and-works__list">
             {essayItems.map(el => (
               <li className="essays-and-works__item">
                 <Link className="essays-and-works__item__link" to={el.link}>
@@ -35,10 +36,10 @@ const EssaysAndWorks = ({ data }) => {
               </li>
             ))}
           </ul>
-        </div>
-        <div style={{ flexGrow: 1 }}>
-          <h2 className="headline-2">Works</h2>
-          <ul className="foobar">
+        </section>
+        <section className="essays-and-works__section">
+          <h2 className="headline-1">Works</h2>
+          <ul className="essays-and-works__list">
             {workItems.map(el => (
               <li className="essays-and-works__item">
                 <Link className="essays-and-works__item__link" to={el.link}>
@@ -47,7 +48,7 @@ const EssaysAndWorks = ({ data }) => {
               </li>
             ))}
           </ul>
-        </div>
+        </section>
       </div>
     </Layout>
   )

@@ -3,13 +3,38 @@
   position: absolute;
   z-index: 1;
   background-color: #f6fffa;
-  top: 40px;
-  right: 170px;
-  bottom: 40px;
-  left: 170px;
-  width: calc(100vw - 340px);
-  height: calc(100vh - 80px);
-  padding: 20px 60px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
+  padding: 10px 30px;
   opacity: 0.8;
   overflow: scroll;
+}
+
+.overlay__close {
+  position: absolute;
+  right: 3px;
+  top: 16px;
+}
+
+@media (min-width: 800px) {
+  .overlay__close {
+    right: 31px;
+    top: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .overlay {
+    top: 40px;
+    right: 170px;
+    bottom: 40px;
+    left: 170px;
+    width: calc(100vw - 340px);
+    height: calc(100vh - 80px);
+    padding: 20px 60px;
+  }
 }

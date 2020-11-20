@@ -1,3 +1,9 @@
+.essays-and-works {
+}
+.essays-and-works__section {
+}
+.essays-and-works__list {
+}
 .essays-and-works__item {
   font-size: 14px;
   margin-bottom: 35px;
@@ -6,4 +12,29 @@
 .essays-and-works__item__link {
   text-decoration: none;
   color: inherit;
+}
+
+@media (min-width: 800px) {
+  .essays-and-works__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px !important;
+  }
+  .essays-and-works__item {
+    font-size: 14px;
+    margin-bottom: 35px;
+    flex: 0 0 50%;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .essays-and-works {
+    display: flex;
+    margin: -15px;
+  }
+  .essays-and-works__section {
+    flex: 0 0 50%;
+    padding: 15px;
+  }
 }
