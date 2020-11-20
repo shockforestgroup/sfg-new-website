@@ -1,0 +1,19 @@
+.entity-iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* From Entity repository: Minimum height for entity is 635, smaller than that it will be cut off at the top and bottom */
+
+/* create top/bottom margin of 100 when window height greater than 835 (= 635 + 2*100) */
+@media (min-height: 835px) {
+  .entity-iframe {
+    top: 100px;
+    bottom: 100px;
+    height: calc(100vh - 200px);
+  }
+}

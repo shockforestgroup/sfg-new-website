@@ -20,9 +20,14 @@ const OverlayNav = ({ items }) => (
       {navItems.map(item => (
         <Link
           to={item.link}
-          style={{ color: "inherit", padding: "0 33px" }}
-          activeStyle={{
+          style={{
+            color: "inherit",
+            margin: "0 33px",
             textDecoration: "none",
+            borderBottom: "2px solid black",
+          }}
+          activeStyle={{
+            borderBottom: "none",
             pointerEvents: "none",
           }}
         >
