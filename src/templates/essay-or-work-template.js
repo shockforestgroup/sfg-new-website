@@ -14,12 +14,17 @@ const Template = ({ data }) => {
   }
   return (
     <Layout>
-      <SEO title={article.title} />
-      <h1 className="headline-1">{article.title}</h1>
-      <p>
-        {article.date}, Author: {article.author}
-      </p>
-      <div dangerouslySetInnerHTML={{ __html: article.html }} />
+      <div className="eow">
+        <SEO title={article.title} />
+        <h1 className="headline-1">{article.title}</h1>
+        <p className="eow__info">
+          {article.author}, {article.date}
+        </p>
+        <div
+          className="eow__content"
+          dangerouslySetInnerHTML={{ __html: article.html }}
+        />
+      </div>
     </Layout>
   )
 }

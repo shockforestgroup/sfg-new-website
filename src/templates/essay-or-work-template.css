@@ -1,0 +1,19 @@
+.eow {
+  margin-bottom: 100px;
+}
+
+.eow__info {
+  font-weight: bold;
+}
+
+.eow__content {
+  margin-top: 50px;
+}
+
+.eow .headline-1 {
+  margin-bottom: 0;
+}
+
+.eow p {
+  margin: 15px 0;
+}

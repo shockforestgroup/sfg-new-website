@@ -13,7 +13,10 @@ const About = ({ data }) => {
     <Layout>
       <SEO title="About" />
       <h1 className="headline-1">{aboutData.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: aboutData.html }} />
+      <div
+        style={{ marginBottom: "100px" }}
+        dangerouslySetInnerHTML={{ __html: aboutData.html }}
+      />
     </Layout>
   )
 }
