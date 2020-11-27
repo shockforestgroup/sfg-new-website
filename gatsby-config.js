@@ -9,11 +9,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `blogcontent`,
         path: `${__dirname}/content`,
       },
     },
+    /* gatsby-plugin-sharp: wrapper of Sharp img processing lib, this plugin is a low-level helper plugin 
+    generally used by other Gatsby plugins, e.g. gatsby-remark-images below */
     `gatsby-plugin-sharp`,
+    /* gatsby-transformer-sharp: Creates ImageSharp nodes from image types that are supported by the Sharp 
+    image processing library and provides fields in their GraphQL types for processing your images */
     `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-transformer-remark",
@@ -26,12 +30,15 @@ module.exports = {
             },
           },
           {
+            /* gatsby-remark-images: Processes images in markdown so they can be used in the production build. 
+            This dep needs gatsby-plugin-sharp */
             resolve: "gatsby-remark-images",
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 2048,
+              maxWidth: 800,
+              linkImagesToOriginal: false,
             },
           },
           {
