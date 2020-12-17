@@ -9,17 +9,19 @@ import "./Overlay.css"
 export default ({ children, onClose }) => {
   return (
     <div className="overlay">
-      <div style={{ marginBottom: "105px" }}>
-        <OverlayNav />
+      <div className="overlay__inner">
+        <div style={{ marginBottom: "105px" }}>
+          <OverlayNav />
+        </div>
+        {children}
+        <span className="overlay__close">
+          <Close
+            onClick={() => {
+              onClose ? onClose() : navigate("/")
+            }}
+          />
+        </span>
       </div>
-      {children}
-      <span className="overlay__close">
-        <Close
-          onClick={() => {
-            onClose ? onClose() : navigate("/")
-          }}
-        />
-      </span>
     </div>
   )
 }
