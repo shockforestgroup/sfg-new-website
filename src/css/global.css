@@ -8,6 +8,10 @@ body {
   font-size: 1em;
 }
 
+body {
+  overflow: hidden;
+}
+
 .headline-1 {
   font-size: 26px;
   font-weight: normal;

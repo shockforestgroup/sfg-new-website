@@ -1,0 +1,43 @@
+.floating-words {
+  position: absolute;
+  z-index: 999;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  width: 200px;
+  opacity: 0.5;
+}
+
+.floating-words--anim1 {
+  animation-name: floating-animation1;
+  animation-duration: 10s;
+}
+
+.floating-words--anim2 {
+  animation-name: floating-animation2;
+  animation-duration: 15s;
+}
+
+@keyframes floating-animation1 {
+  0% {
+    top: 0;
+    left: -100px;
+  }
+
+  100% {
+    top: 400px;
+    left: 100vw;
+  }
+}
+
+@keyframes floating-animation2 {
+  0% {
+    top: 50vh;
+    left: -100px;
+  }
+
+  100% {
+    top: 0px;
+    left: 100vw;
+  }
+}

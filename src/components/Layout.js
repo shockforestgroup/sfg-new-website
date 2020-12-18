@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header"
+import FloatingWords from "./FloatingWords"
 import "../css/global.css"
 
 const Layout = ({ children, onLogoClick, style }) => {
@@ -37,6 +38,7 @@ const Layout = ({ children, onLogoClick, style }) => {
         onLogoClick={onLogoClick}
       />
       <main>{children}</main>
+      <FloatingWords />
     </div>
   )
 }
