@@ -1,26 +1,21 @@
 import { navigate } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-
+import SFGLogo from "../images/sfg-logo.svg"
 import "./Header.css"
 
 const Header = ({ siteTitle, onLogoClick }) => (
   <header className="header">
-    <h1
-      style={{
-        margin: 0,
-        fontSize: "22px",
-        fontWeight: "300",
-        color: `#fff`,
-        textDecoration: `none`,
-        cursor: "pointer",
-      }}
+    <SFGLogo
+      style={{ position: "absolute" }}
+      width="40px"
+      height="auto"
+      fill="red"
+      cursor="pointer"
       onClick={() =>
         onLogoClick ? onLogoClick() : navigate("/essays-and-works")
       }
-    >
-      {siteTitle}
-    </h1>
+    />
   </header>
 )
 
