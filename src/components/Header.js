@@ -11,11 +11,7 @@ const Header = ({ siteTitle, onLogoClick }) => (
         margin: 0,
         fontSize: "22px",
         fontWeight: "300",
-<<<<<<< HEAD
-        color: `white`,
-=======
         color: `#fff`,
->>>>>>> Make logo white
         textDecoration: `none`,
         cursor: "pointer",
       }}
