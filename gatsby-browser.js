@@ -12,7 +12,7 @@ export const wrapRootElement = ({ element }) => {
     <>
       <div
         style={{
-          backgroundColor: "black",
+          backgroundColor: "#000",
           position: "absolute",
           height: "100vh",
           width: "100%",
