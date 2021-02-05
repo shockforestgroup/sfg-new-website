@@ -12,6 +12,20 @@
   margin: 0 10px;
 }
 
+.overlay-nav__item {
+  position: relative;
+}
+
+.overlay-nav__item--active:before {
+  display: flex;
+  justify-content: center;
+  content: ">";
+  position: absolute;
+  font-size: 12px;
+  left: -10px;
+  line-height: 28px;
+}
+
 @media (min-width: 800px) {
   .overlay-nav {
     font-size: 22px;
@@ -21,5 +35,11 @@
 
   .overlay-nav__item {
     margin: 0 33px;
+  }
+
+  .overlay-nav__item--active:before {
+    font-size: 16px;
+    left: -16px;
+    line-height: 28px;
   }
 }

@@ -15,10 +15,7 @@ const OverlayNav = () => (
         <Link
           to={item.link}
           className="overlay-nav__item"
-          activeStyle={{
-            borderBottom: "none",
-            pointerEvents: "none",
-          }}
+          activeClassName="overlay-nav__item--active"
         >
           {item.title}
         </Link>
