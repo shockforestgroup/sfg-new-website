@@ -3,4 +3,4 @@ date: 2021-02-14T21:06:17.668Z
 title: Linked PDF TEST
 author: test
 ---
-[static/assets/Aesthetics_Eurometaal_essay.pdf](static/assets/Aesthetics_Eurometaal_essay.pdf)
+[Essay](https://github.com/alexabruck/sfg-new-website/raw/master/static/assets/aesthetics_eurometaal_essay.pdf)
