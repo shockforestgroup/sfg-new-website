@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
 .overlay-nav {
-  text-transform: uppercase;
+  text-transform: lowercase;
   display: flex;
   font-size: 17px;
   padding-left: 30px;
