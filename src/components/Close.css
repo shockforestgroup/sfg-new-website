@@ -7,7 +7,7 @@
 .close:after {
   content: "";
   height: 20px;
-  border-left: 2px solid black;
+  border-left: 2px solid rgb(255, 255, 255);
   position: absolute;
   transform: rotate(45deg);
   left: 8px;
@@ -16,7 +16,7 @@
 .close:before {
   content: "";
   height: 20px;
-  border-left: 2px solid black;
+  border-left: 2px solid rgb(255, 255, 255);
   position: absolute;
   transform: rotate(-45deg);
   left: 8px;
@@ -29,13 +29,13 @@
   }
   .close:after {
     height: 37px;
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(255, 255, 255);
     transform: rotate(45deg);
     left: 16.5px;
   }
   .close:before {
     height: 37px;
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(255, 255, 255);
     transform: rotate(-45deg);
     left: 16.5px;
   }
