@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import Header from "./Header"
 import "../css/global.css"
@@ -22,6 +23,12 @@ const Layout = ({ children, onLogoClick, style }) => {
       }
     }
   `)
+
+  // for disabling
+  React.useEffect(() => {
+    document.getElementsByTagName("html")[0].style.overflow = "hidden";
+    disableBodyScroll(document.body);
+  }, []);
 
   return (
     <div
