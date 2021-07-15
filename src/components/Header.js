@@ -9,7 +9,7 @@ const Header = ({ siteTitle, onLogoClick }) => (
     <SFGLogo
       style={{ position: "absolute" }}
       width="40px"
-      height="auto"
+      height="20px"
       fill="red"
       cursor="pointer"
       onClick={() =>
