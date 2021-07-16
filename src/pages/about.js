@@ -3,12 +3,24 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/LayoutWithOverlay"
 import SEO from "../components/Seo"
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 
 const About = ({ data }) => {
   const aboutData = {
     title: data.markdownRemark.frontmatter.title,
     html: data.markdownRemark.html,
   }
+
+  React.useEffect(() => {
+    gatsbyEnableBodyScroll();
+  }, []);
+
+  const gatsbyEnableBodyScroll = (event) => {
+    enableBodyScroll(document.body);
+    document.getElementsByTagName("html")[0].style = "";
+  };
+
   return (
     <Layout>
       <SEO title="About" />
