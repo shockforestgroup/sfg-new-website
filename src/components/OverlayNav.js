@@ -8,6 +8,10 @@ const navItems = [
   { title: "About", link: "/about" },
 ]
 
+const externalLinks = [
+  { title: "Archive", link: "https://shockforest.group/" },
+]
+
 const OverlayNav = () => (
   <nav className={"overlay-nav"}>
     <div>
@@ -19,6 +23,17 @@ const OverlayNav = () => (
         >
           {item.title}
         </Link>
+      ))}
+      {externalLinks.map(item => (
+        <a
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="overlay-nav__item"
+          activeClassName="overlay-nav__item--active"
+          >
+          {item.title}
+        </a>
       ))}
     </div>
   </nav>
