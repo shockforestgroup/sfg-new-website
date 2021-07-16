@@ -24,9 +24,9 @@ const About = ({ data }) => {
   return (
     <Layout>
       <SEO title="About" />
-      <h1 className="headline-1">{aboutData.title}</h1>
+      <h1 className="headline-1" style = {{marginLeft: "auto", marginRight: "auto"}} >{aboutData.title}</h1>
       <div
-        style={{ marginBottom: "100px" }}
+        style={{ marginBottom: "100px", maxWidth: "50rem", marginLeft: "auto", marginRight: "auto" }}
         dangerouslySetInnerHTML={{ __html: aboutData.html }}
       />
     </Layout>
