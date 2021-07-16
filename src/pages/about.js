@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/LayoutWithOverlay"
 import SEO from "../components/Seo"
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { enableBodyScroll } from 'body-scroll-lock';
 
 
 const About = ({ data }) => {

@@ -2,11 +2,11 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll } from 'body-scroll-lock';
 
 
 const About = () => {
-  // for disabling
+
   React.useEffect(() => {
     gatsbyDisableBodyScroll();
   }, []);

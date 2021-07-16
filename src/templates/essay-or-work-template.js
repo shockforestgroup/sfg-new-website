@@ -2,8 +2,6 @@ import React from "react"
 
 import Layout from "../components/LayoutWithOverlay"
 import SEO from "../components/Seo"
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-
 
 import "./essay-or-work-template.css"
 
@@ -14,15 +12,6 @@ const Template = ({ data }) => {
     author: data.markdownRemark.frontmatter.author,
     html: data.markdownRemark.html,
   }
-
-  React.useEffect(() => {
-    gatsbyEnableBodyScroll();
-  }, []);
-
-  const gatsbyEnableBodyScroll = (event) => {
-    enableBodyScroll(document.body);
-    document.getElementsByTagName("html")[0].style = "";
-  };
 
   return (
     <Layout>

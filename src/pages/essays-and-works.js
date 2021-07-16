@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/LayoutWithOverlay"
 import SEO from "../components/Seo"
+import { enableBodyScroll } from 'body-scroll-lock';
 
 import "./essays-and-works.css"
 
@@ -20,6 +21,15 @@ const EssaysAndWorks = ({ data }) => {
     author: frontmatter.author,
     link: fields.slug,
   }))
+
+  React.useEffect(() => {
+    gatsbyEnableBodyScroll();
+  }, []);
+
+  const gatsbyEnableBodyScroll = (event) => {
+    enableBodyScroll(document.body);
+    document.getElementsByTagName("html")[0].style = "";
+  };
 
   return (
     <Layout>
