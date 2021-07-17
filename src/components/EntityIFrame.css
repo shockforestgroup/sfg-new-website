@@ -1,19 +1,26 @@
 .entity-iframe {
   border: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
 /* From Entity repository: Minimum height for entity is 635, smaller than that it will be cut off at the top and bottom */
 
-/* create top/bottom margin of 100 when window height greater than 835 (= 635 + 2*100) */
+/* create top/bottom margin of 40 when window height greater than 835 (= 635 + 2*100) */
 @media (min-height: 835px) {
   .entity-iframe {
-    top: 100px;
-    bottom: 100px;
-    height: calc(100vh - 200px);
+    top: 40px;
+    bottom: 40px;
+    height: calc(100% - 80px);
+  }
+}
+
+/* create top margin of when device-height smaller than 700px so logo doesnt overlap entity on small mobile devices */
+@media (max-device-height: 700px) {
+  .entity-iframe {
+    top: 20px;
   }
 }
