@@ -13,6 +13,19 @@
   color: inherit;
 }
 
+a:link.essays-and-works__item__link {
+  color: white;
+}
+a:visited.essays-and-works__item__link {
+  color: white;
+}
+a:hover.essays-and-works__item__link {
+  color: white;
+}
+a:active.essays-and-works__item__link {
+  color: white;
+}
+
 @media (min-width: 800px) {
   .essays-and-works__list {
     display: flex;

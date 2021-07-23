@@ -8,6 +8,19 @@
   padding-left: 30px;
 }
 
+a:link.overlay-nav__item {
+  color: white;
+}
+a:visited.overlay-nav__item {
+  color: white;
+}
+a:hover.overlay-nav__item {
+  color: white;
+}
+a:active.overlay-nav__item {
+  color: white;
+}
+
 .overlay-nav__item {
   color: inherit;
   text-decoration: none;

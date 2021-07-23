@@ -1,3 +1,23 @@
+/* unvisited link */
+a:link {
+  color: rgb(0, 174, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(151, 151, 151);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(81, 200, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(151, 222, 255);
+} 
+
 .overlay {
   border: 2px solid black;
   position: absolute;
