@@ -9,7 +9,7 @@ const navItems = [
 ]
 
 const externalLinks = [
-  { title: "Archive", link: "https://shockforest.group/" },
+  { title: "Archive", link: "https://archive.shockforest.group/" },
 ]
 
 const OverlayNav = () => (
