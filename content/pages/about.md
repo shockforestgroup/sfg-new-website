@@ -43,4 +43,4 @@ Immersion into this hyperlocal environment has opened our eyes to what it means 
 
 *More information about the Shock Forest Group can be found on [Het Hem’s website](https://hethem.nl/en/Chapter-Two/Door-Nicolas-Jaar-Shock-Forest-Group). The source code of the Shock Forest Log is [available on GitHub](https://github.com/bertspaan/shock-forest-bot).*
 
-*Web development - [Alexa Steinbrück](https://www.alexasteinbruck.com/) & [Jelger Kroese](https://www.jelgerkroese.com/)*
+*Web development - [Alexa Steinbrück](https://www.alexasteinbruck.com/) & [Jelger Kroese](https://www.jelgerkroese.com/).* *Based on original Unity implementation of The Entity by Shock Forest Group*.
