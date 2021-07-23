@@ -41,8 +41,6 @@ Our work has been an ongoing experiment in presence. If traditional research wor
 
 Immersion into this hyperlocal environment has opened our eyes to what it means to work in a collective, to allow for [\#cycles](https://shockforest.group/#/?hashtags=cycles) of emergence in former spaces of monodirectional production. We have shown that our process is not only a part of our ongoing work, but also its essence. We have let our voices emerge organically, and we have seen them grow both collectively and individually. We have sought to learn how to incorporate ourselves with the [\#light](https://shockforest.group/#/?hashtags=light) and [\#violence](https://shockforest.group/#/?hashtags=violence) that surrounds us. We hope that those who follow in our footsteps will do the same.
 
-Explore this [\#log](https://shockforest.group/#/?hashtags=log) by clicking on hashtags that interest you. See how the themes interconnect. Ask yourself what it means to be situated in a place that makes so many ripples across global theaters of war. What stories lay camouflaged here? Where does the bullet land?
-
 *More information about the Shock Forest Group can be found on [Het Hem’s website](https://hethem.nl/en/Chapter-Two/Door-Nicolas-Jaar-Shock-Forest-Group). The source code of the Shock Forest Log is [available on GitHub](https://github.com/bertspaan/shock-forest-bot).*
 
-[Explore the Shock Forest Log](https://shockforest.group/#/).
+*Web development - [Alexa Steinbrück](https://www.alexasteinbruck.com/) & [Jelger Kroese](https://www.jelgerkroese.com/)*
