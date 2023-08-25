@@ -50,3 +50,29 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
               - { label: Photo, name: photo, widget: image }
+      - label: "Hembrug Page"
+        name: hembrug
+        file: content/pages/hembrug.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
+      - label: "Cosmic Radio Page"
+        name: cosmicRadio
+        file: content/pages/cosmicRadio.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
