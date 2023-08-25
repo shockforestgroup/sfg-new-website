@@ -4,6 +4,7 @@ title: Infinite responsability
 author: Zaandam, The Netherlands
 project: hembrug
 coverImage: img_0060.jpg
+file: proposal-sfg-radio-pt-2-1.pdf
 ---
 ![alt text](img_0068.jpg "title")
 
