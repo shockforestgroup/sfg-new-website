@@ -1,7 +1,9 @@
 ---
 date: 2023-08-25T10:13:06.182Z
 title: Cosmic Radio
-author: " "
+author: Eindhoven, The Netherlands
+project: cosmic radio
+coverImage: boudewijnbollmann_strp2023_16april2023_lores-31.jpg
 ---
 
 
