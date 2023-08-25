@@ -32,10 +32,10 @@ const Layout = ({ children, onLogoClick, style }) => {
         ...style,
       }}
     >
-      {/* <Header
+      {<Header
         siteTitle={data.site.siteMetadata?.title || `SFG`}
         onLogoClick={onLogoClick}
-      /> */}
+      />}
       <main>{children}</main>
     </div>
   )

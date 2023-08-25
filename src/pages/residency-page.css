@@ -1,0 +1,51 @@
+.residency-page {
+}
+.residency-page__section {
+}
+.residency-page__list {
+}
+.residency-page__item {
+  margin-bottom: 35px;
+}
+
+.residency-page__item__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:link.residency-page__item__link {
+  color: white;
+}
+a:visited.residency-page__item__link {
+  color: white;
+}
+a:hover.residency-page__item__link {
+  color: white;
+}
+a:active.residency-page__item__link {
+  color: white;
+}
+
+@media (min-width: 800px) {
+  .residency-page__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px !important;
+  }
+  .residency-page__item {
+    margin-bottom: 35px;
+    flex: 0 0 50%;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .residency-page {
+    display: flex;
+    margin: -15px;
+  }
+  .residency-page__section {
+    flex: 0 0 50%;
+    padding: 15px;
+  }
+}

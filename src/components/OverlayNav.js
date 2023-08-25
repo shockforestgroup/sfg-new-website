@@ -5,6 +5,7 @@ import "./OverlayNav.css"
 
 const navItems = [
   { title: "Essays/Works", link: "/essays-and-works" },
+  { title: "Hembrug", link: "/residency-page" },
   { title: "About", link: "/about" },
 ]
 
