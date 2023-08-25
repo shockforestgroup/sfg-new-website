@@ -2,6 +2,8 @@
 date: 2019-12-19T23:00:00.000Z
 title: Infinite responsability
 author: Zaandam, The Netherlands
+project: hembrug
+coverImage: img_0060.jpg
 ---
 ![alt text](img_0068.jpg "title")
 
