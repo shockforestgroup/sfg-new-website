@@ -17,6 +17,7 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: author, label: Author }
+      - { name: project, label: Project, widget: select, options: ["hembrug", "cosmic radio"]}
   - name: work
     label: Work
     folder: content/works
@@ -30,6 +31,7 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: author, label: Author }
+      - { name: project, label: Project, widget: select, options: ["hembrug", "cosmic radio"]}
   - name: pages
     label: Pages
     files:
