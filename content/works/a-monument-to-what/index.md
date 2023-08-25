@@ -2,6 +2,8 @@
 date: 2023-08-25T14:52:10.424Z
 title: A Monument to What?
 author: Zaandam, The Netherlands
+project: hembrug
+coverImage: img_0071.jpg
 ---
 ![](img_0071.jpg)
 
