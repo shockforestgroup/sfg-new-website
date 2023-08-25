@@ -66,35 +66,35 @@ const ResidencyPage = ({ data }) => {
 
 export default ResidencyPage
 
-// export const query = graphql`
-//   query PageQuery {
-//     essays: allMarkdownRemark(
-//       filter: { fileAbsolutePath: { regex: "/(essays)/" } }
-//     ) {
-//       nodes {
-//         fields {
-//           slug
-//         }
-//         frontmatter {
-//           title
-//           date
-//           author
-//         }
-//       }
-//     }
-//     works: allMarkdownRemark(
-//       filter: { fileAbsolutePath: { regex: "/(works)/" } }
-//     ) {
-//       nodes {
-//         fields {
-//           slug
-//         }
-//         frontmatter {
-//           title
-//           date
-//           author
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query PageQuery2 {
+    essays: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/(essays)/" } }
+    ) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+          author
+        }
+      }
+    }
+    works: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/(works)/" } }
+    ) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+          author
+        }
+      }
+    }
+  }
+`
