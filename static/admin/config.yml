@@ -13,10 +13,13 @@ collections:
     editor:
       preview: false
     fields:
-      - { name: date, label: Date, widget: datetime }
+      - { name: date, label: Date, widget: date, default: '', format: YYYY }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: author, label: Author }
+      - { name: project, label: Project, widget: select, options: ["hembrug", "cosmic radio"]}
+      - { name: coverImage, label: Cover Image, widget: image, allow_multiple: false }
+      # - { name: file, label: File, widget: file, allow_multiple: true }
   - name: work
     label: Work
     folder: content/works
@@ -26,16 +29,45 @@ collections:
     editor:
       preview: false
     fields:
-      - { name: date, label: Date, widget: datetime }
+      - { name: date, label: Date, widget: date, default: '', format: YYYY }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: author, label: Author }
+      - { name: project, label: Project, widget: select, options: ["hembrug", "cosmic radio"]}
+      - { name: coverImage, label: Cover 1Image, widget: image, allow_multiple: false }
+      # - { name: file, label: File, widget: file, allow_multiple: true }
   - name: pages
     label: Pages
     files:
       - label: "About Page"
         name: about
         file: content/pages/about.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
+      - label: "Hembrug Page"
+        name: hembrug
+        file: content/pages/hembrug.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
+      - label: "Cosmic Radio Page"
+        name: cosmicRadio
+        file: content/pages/cosmicRadio.md
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
