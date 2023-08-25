@@ -19,7 +19,7 @@ collections:
       - { name: author, label: Author }
       - { name: project, label: Project, widget: select, options: ["hembrug", "cosmic radio"]}
       - { name: coverImage, label: Cover Image, widget: image, allow_multiple: false }
-      - { name: file, label: File, widget: file, allow_multiple: true }
+      # - { name: file, label: File, widget: file, allow_multiple: true }
   - name: work
     label: Work
     folder: content/works
@@ -35,7 +35,7 @@ collections:
       - { name: author, label: Author }
       - { name: project, label: Project, widget: select, options: ["hembrug", "cosmic radio"]}
       - { name: coverImage, label: Cover 1Image, widget: image, allow_multiple: false }
-      - { name: file, label: File, widget: file, allow_multiple: true }
+      # - { name: file, label: File, widget: file, allow_multiple: true }
   - name: pages
     label: Pages
     files:
