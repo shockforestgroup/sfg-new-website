@@ -13,12 +13,15 @@ const EssaysAndWorks = ({ data }) => {
     title: frontmatter.title,
     date: frontmatter.date,
     author: frontmatter.author,
+    project: frontmatter.project,
     link: fields.slug,
   }))
   const workItems = data.works.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
     author: frontmatter.author,
+    project: frontmatter.project,
+    coverImage: frontmatter.coverImage,
     link: fields.slug,
   }))
 
@@ -69,7 +72,7 @@ export default EssaysAndWorks
 export const query = graphql`
   query PageQuery {
     essays: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/(essays)/" } }
+      filter: { fileAbsolutePath: { regex: "/(essays)/" }, frontmatter: { project: { eq: "cosmic radio" } } }
     ) {
       nodes {
         fields {
@@ -79,11 +82,12 @@ export const query = graphql`
           title
           date
           author
+          project
         }
       }
     }
     works: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/(works)/" } }
+      filter: { fileAbsolutePath: { regex: "/(works)/" }, frontmatter: { project: { eq: "cosmic radio" } } }
     ) {
       nodes {
         fields {
@@ -93,6 +97,14 @@ export const query = graphql`
           title
           date
           author
+          project
+          coverImage {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
