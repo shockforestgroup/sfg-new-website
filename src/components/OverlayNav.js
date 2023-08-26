@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 import "./OverlayNav.css"
 
 const navItems = [
-  { title: "Cosmic Radio", link: "/essays-and-works" },
-  { title: "Hembrug", link: "/residency-page" },
+  { title: "Cosmic Radio", link: "/cosmic-radio" },
+  { title: "Hembrug", link: "/hembrug" },
   { title: "About", link: "/about" },
 ]
 
