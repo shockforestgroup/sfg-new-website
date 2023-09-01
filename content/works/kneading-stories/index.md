@@ -1,13 +1,13 @@
 ---
 date: "2019"
-title: kneading stories
+title: Kneading Stories
 author: Zaandam, The Netherlands
 project: hembrug
 coverImage: img_0080.jpg
 ---
 
 
-![](img_0079.jpg)
+![](img_20191214_130625.jpg)
 
 The word bread comes from Old English and means fragment, bit, crumb. It also means to extend, to spread, to stretch out. To rise and grow. As when people come together and act collectively, the coming together of flour and water particles creates something that is much more than the sum of its parts.
 
@@ -17,7 +17,7 @@ The word company comes from latin cum-panis, which means with-bread. Bread under
 
 The abundance or scarcity of bread has always been a parameter to measure the wellbeing of a country. During war times, bread has often been rationed. The possibility of buying flour or bread often becoming the greatest difficulty for the population. It seems that the circulation of bread is inversely proportional to the circulation of weapons. The relationship between bread and war is the one between life and death. Between togetherness and division. Between bounty and deprivation.
 
-![](img_20191214_130625.jpg)
+![](img_0079.jpg)
 
 Both war and bread are related to the term safety. What does it mean to be safe? We have asked ourselves this question a lot in the past months. Protected under the canopy of this new art institution, we have tried to acknowledge our role of privilege: it is safe to be here. Neoliberal wars are fought in the name of safety. The deployment of “defence” forces is justified by the promise of a safe national space. Safety is guaranteed through the construction of barriers. Through exclusion. Those inside are protected at the expense of those outside. Security systems installed in private homes create a shield against possible intruders. In these terms, safety is egoistic, fearful, privatised.
 
