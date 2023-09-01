@@ -5,7 +5,7 @@ author: Zaandam, The Netherlands
 project: hembrug
 coverImage: img_0084.jpg
 ---
-![](img_20190926_194940.jpg)
+![](agadaqadq6gxg3vhceqnfug6bzmydjj7awyabaeaawiaa3kaa9-_aaiwba_544_1280x960.jpg)
 
 What do bodies do in an empty space?
 
