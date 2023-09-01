@@ -9,9 +9,9 @@ const navItems = [
   { title: "About", link: "/about" },
 ]
 
-const externalLinks = [
-  { title: "Archive", link: "https://archive.shockforest.group/" },
-]
+// const externalLinks = [
+//   { title: "Archive", link: "https://archive.shockforest.group/" },
+// ]
 
 const OverlayNav = () => (
   <nav className={"overlay-nav"}>
@@ -25,7 +25,7 @@ const OverlayNav = () => (
           {item.title}
         </Link>
       ))}
-      {externalLinks.map(item => (
+      {/* {externalLinks.map(item => (
         <a
           href={item.link}
           target="_blank"
@@ -35,7 +35,7 @@ const OverlayNav = () => (
           >
           {item.title}
         </a>
-      ))}
+      ))} */}
     </div>
   </nav>
 )
