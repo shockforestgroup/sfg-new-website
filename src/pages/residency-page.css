@@ -26,13 +26,6 @@ a:active.residency-page__item__link {
   color: white;
 }
 
-/* img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-  height: 150px;
-} */
 
 @media (min-width: 800px) {
   .residency-page__list {
