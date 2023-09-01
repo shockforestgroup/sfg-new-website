@@ -43,37 +43,21 @@ const ResidencyPage = ({ data }) => {
       style={{ marginBottom: "100px" }}
       dangerouslySetInnerHTML={{ __html: data.description.html }}
       />
-      <div className="residency-page">
-        <section className="residency-page__section">
-          <h2 className="headline-1">Essays</h2>
-          <ul className="residency-page__list">
-            {essayItems.map(el => (
-              <li className="residency-page__item">
-                <Link className="residency-page__item__link" to={el.link}>
-                  {el.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-        <section className="residency-page__section">
-          <h2 className="headline-1">Works</h2>
+      <h2 className="headline-1">Works</h2>
           <ul className="residency-page__list">
             {workItems.map(el => (
               <li className="residency-page__item">
                   <Link className="residency-page__item__link" to={el.link}>
-                    {el.title}
                     <Img 
                       fluid={el.coverImage.childImageSharp.fluid}
                       alt="cover img"
                       title="test"
                     />
+                    {el.title}
                   </Link>
               </li>
             ))}
           </ul>
-        </section>
-      </div>
     </Layout>
   )
 }
