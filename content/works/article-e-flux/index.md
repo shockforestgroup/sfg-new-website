@@ -6,6 +6,6 @@ author: Zaandam, The Netherlands
 project: hembrug
 coverImage: screenshot-2023-08-29-at-17.21.07.png
 ---
-![](canal.jpeg)
+![](screenshot_20191220-152613.jpg)
 
 https://yctm.e-flux.com/sonic-boom
