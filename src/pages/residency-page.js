@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/LayoutWithOverlay"
 import SEO from "../components/Seo"
@@ -60,9 +61,14 @@ const ResidencyPage = ({ data }) => {
           <ul className="residency-page__list">
             {workItems.map(el => (
               <li className="residency-page__item">
-                <Link className="residency-page__item__link" to={el.link}>
-                  {el.title}
-                </Link>
+                  <Link className="residency-page__item__link" to={el.link}>
+                    {el.title}
+                    <Img 
+                      fluid={el.coverImage.childImageSharp.fluid}
+                      alt="cover img"
+                      title="test"
+                    />
+                  </Link>
               </li>
             ))}
           </ul>
