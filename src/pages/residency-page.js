@@ -47,14 +47,18 @@ const ResidencyPage = ({ data }) => {
           <ul className="residency-page__list">
             {workItems.map(el => (
               <li className="residency-page__item">
-                  <Link className="residency-page__item__link" to={el.link}>
-                    <Img 
-                      fluid={el.coverImage.childImageSharp.fluid}
-                      alt="cover img"
-                      title="test"
-                    />
-                    {el.title}
-                  </Link>
+                  <div className="hide-child">
+                    <Link to={el.link}>
+                      <Img 
+                        fluid={el.coverImage.childImageSharp.fluid}
+                        alt="cover img"
+                        title="test"
+                      />
+                    </Link>
+                    <p className="child top-0 left-0 right-0 bottom-0 flex items-center justify-center f3 white bg-black-60">
+                      {el.title}
+                    </p>                    
+                  </div>
               </li>
             ))}
           </ul>
