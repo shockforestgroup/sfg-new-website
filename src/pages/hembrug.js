@@ -17,6 +17,12 @@ export default Hembrug;
 
 export const query = graphql`
   query PageQueryHembrug {
+    description: markdownRemark(fields: { slug: { eq: "/pages/hembrug/" } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
     essays: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/(essays)/" }, frontmatter: { project: { eq: "hembrug" } } }
     ) {

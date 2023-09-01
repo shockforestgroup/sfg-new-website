@@ -17,6 +17,12 @@ export default CosmicRadio;
 
 export const query = graphql`
   query PageQueryCosmicRadio {
+    description: markdownRemark(fields: { slug: { eq: "/pages/cosmicRadio/" } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
     essays: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/(essays)/" }, frontmatter: { project: { eq: "cosmic radio" } } }
     ) {

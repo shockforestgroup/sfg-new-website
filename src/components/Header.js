@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import SFGLogo from "../images/sfg-logo.svg"
 import "./Header.css"
+import OverlayNav from "./OverlayNav"
 
 const Header = ({ siteTitle, onLogoClick }) => (
   <header className="header">
@@ -13,9 +14,10 @@ const Header = ({ siteTitle, onLogoClick }) => (
       fill="red"
       cursor="pointer"
       onClick={() =>
-        onLogoClick ? onLogoClick() : navigate("/essays-and-works")
+        onLogoClick ? onLogoClick() : navigate("/about")
       }
     />
+    {/* <OverlayNav/> */}
   </header>
 )
 

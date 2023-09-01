@@ -9,6 +9,7 @@ import { enableBodyScroll } from 'body-scroll-lock';
 import "./residency-page.css"
 
 const ResidencyPage = ({ data }) => {
+  const description = data.description.html
   const essayItems = data.essays.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
@@ -37,6 +38,10 @@ const ResidencyPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Research Location" />
+      <div
+      style={{ marginBottom: "100px" }}
+      dangerouslySetInnerHTML={{ __html: data.description.html }}
+      />
       <div className="residency-page">
         <section className="residency-page__section">
           <h2 className="headline-1">Essays</h2>
