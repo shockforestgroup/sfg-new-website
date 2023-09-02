@@ -24,7 +24,7 @@ const OverlayNav = ({ show, onLogoClick }) => {
 
   // return the component only if the visible state is true
   return visible ? (
-    <nav className={"overlay-nav"} >
+    <nav className={"overlay-nav bg-black"} >
       <button
         className="overlay-nav__item white nowrap bg-black ba b--black"
         cursor="pointer"

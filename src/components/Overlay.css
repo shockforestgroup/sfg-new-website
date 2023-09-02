@@ -22,10 +22,10 @@ a:active {
   border: 2px solid black;
   position: absolute;
   z-index: 1;
-  top: 10px;
-  left: 10px;
-  width: calc(100vw - 20px);
-  height: calc(100vh - 20px);
+  top: 60px;
+  /* left: 10px; */
+  width: 100vw;
+  height: calc(100vh - 60px);
   overflow: hidden;
   text-transform: lowercase;
 }
@@ -71,10 +71,10 @@ a:active {
 
 @media (min-width: 1200px) {
   .overlay {
-    top: 40px;
-    left: 170px;
-    width: calc(100vw - 340px);
-    height: calc(100vh - 80px);
+    top: 60px;
+    /* left: 170px; */
+    width: 100vw;
+    height: calc(100vh - 60px);
   }
 
   .overlay__inner__content {

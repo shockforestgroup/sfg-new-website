@@ -12,8 +12,8 @@
 /* create top/bottom margin of 40 when window height greater than 835 (= 635 + 2*100) */
 @media (min-height: 835px) {
   .entity-iframe {
-    top: 40px;
-    bottom: 40px;
+    top: 60px;
+    bottom: 20px;
     height: calc(100% - 80px);
   }
 }
