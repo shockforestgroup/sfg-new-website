@@ -8,15 +8,9 @@ const navItems = [
   // { title: "Shock Forest Group", link: "/" },
   { title: "Cosmic Radio", link: "/cosmic-radio" },
   { title: "Hembrug", link: "/hembrug" },
-  // { title: "About", link: "/about" },
 ]
 
 const aboutItem = { title: "About", link: "/about" }
-
-
-// const externalLinks = [
-//   { title: "Archive", link: "https://archive.shockforest.group/" },
-// ]
 
 const OverlayNav = ({ show, onLogoClick }) => {
   // create a state variable called visible and set its initial value to the show prop
@@ -52,17 +46,6 @@ const OverlayNav = ({ show, onLogoClick }) => {
         >
           {aboutItem.title}
         </Link>
-        {/* {externalLinks.map(item => (
-        <a
-          href={item.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="overlay-nav__item"
-          activeClassName="overlay-nav__item--active"
-          >
-          {item.title}
-        </a>
-      ))} */}
       </div>
     </nav>
   ) : (

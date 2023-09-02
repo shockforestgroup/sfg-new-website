@@ -72,7 +72,7 @@ a:active.overlay-nav__item {
 @media (min-width: 800px) {
   .overlay-nav {
     font-size: 22px;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 0;
   }
 
