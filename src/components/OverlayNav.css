@@ -4,8 +4,35 @@
 .overlay-nav {
   text-transform: lowercase;
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
   font-size: 17px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
+  padding: 10px;
+}
+
+.overlay-nav_project-items {
+  /* Make the div element a flex container */
+  display: flex;
+  /* Align the items horizontally */
+  justify-content: flex-end;
+  /* Set the width of the div element to fill the remaining space */
+  flex: 1;
+  text-align: end;
+}
+
+.overlay-nav_button {
+  /* Make the div element a flex container */
+  display: flex;
+  /* Align the items horizontally */
+  width: 100%;
+  justify-content: flex-start;
+  /* Set the width of the div element to fill the remaining space */
+  flex: 1;
+  text-align: start;
+  padding: 20px;
 }
 
 a:link.overlay-nav__item {
@@ -50,7 +77,7 @@ a:active.overlay-nav__item {
   }
 
   .overlay-nav__item {
-    margin: 0 33px;
+    margin: 0 10px;
   }
 
   .overlay-nav__item--active:before {

@@ -1,31 +1,58 @@
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
+import SFGLogo from "../images/sfg-logo.svg"
 import "./OverlayNav.css"
 
 const navItems = [
+  // { title: "Shock Forest Group", link: "/" },
   { title: "Cosmic Radio", link: "/cosmic-radio" },
   { title: "Hembrug", link: "/hembrug" },
-  { title: "About", link: "/about" },
+  // { title: "About", link: "/about" },
 ]
+
+const aboutItem = { title: "About", link: "/about" }
+
 
 // const externalLinks = [
 //   { title: "Archive", link: "https://archive.shockforest.group/" },
 // ]
 
-const OverlayNav = () => (
-  <nav className={"overlay-nav"}>
-    <div>
-      {navItems.map(item => (
+const OverlayNav = ({ show, onLogoClick }) => {
+  // create a state variable called visible and set its initial value to the show prop
+  const [visible, setVisible] = useState(show)
+
+  // return the component only if the visible state is true
+  return visible ? (
+    <nav className={"overlay-nav"} >
+      <button
+        className="overlay-nav__item white nowrap bg-black ba b--black"
+        cursor="pointer"
+        onClick={() =>
+          onLogoClick ? onLogoClick() : setVisible(!visible)
+        }
+      >
+        Shock Forest Group
+      </button>
+      <div className="overlay-nav_project-items">
+        {navItems.map(item => (
+          <Link
+            to={item.link}
+            className="overlay-nav__item"
+            activeClassName="overlay-nav__item--active"
+          >
+            {item.title}
+          </Link>
+        ))}
+        --
         <Link
-          to={item.link}
+          to={aboutItem.link}
           className="overlay-nav__item"
           activeClassName="overlay-nav__item--active"
         >
-          {item.title}
+          {aboutItem.title}
         </Link>
-      ))}
-      {/* {externalLinks.map(item => (
+        {/* {externalLinks.map(item => (
         <a
           href={item.link}
           target="_blank"
@@ -36,16 +63,34 @@ const OverlayNav = () => (
           {item.title}
         </a>
       ))} */}
+      </div>
+    </nav>
+  ) : (
+    // Use visible state to control the display property of SFGLogo
+    <div className="overlay-nav_button">
+      < SFGLogo
+        style={{ position: "absolute" }}
+        className="overlay-nav__item nowrap bg-black ba b--black"
+        width="40px"
+        height="20px"
+        fill="red"
+        cursor="pointer"
+        onClick={() =>
+          onLogoClick ? onLogoClick() : setVisible(!visible)
+        }
+      />
     </div>
-  </nav>
-)
+  )
+}
 
 OverlayNav.propTypes = {
   items: PropTypes.array,
+  show: PropTypes.bool,
 }
 
 OverlayNav.defaultProps = {
   items: [],
+  show: true,
 }
 
 export default OverlayNav

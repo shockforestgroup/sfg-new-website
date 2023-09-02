@@ -1,25 +1,24 @@
 import { navigate } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+// import React from "react"
+import React, { useState } from "react" // Import useState hook
 import SFGLogo from "../images/sfg-logo.svg"
 import "./Header.css"
 import OverlayNav from "./OverlayNav"
 
-const Header = ({ siteTitle, onLogoClick }) => (
-  <header className="header">
-    <SFGLogo
-      style={{ position: "absolute" }}
-      width="40px"
-      height="20px"
-      fill="red"
-      cursor="pointer"
-      onClick={() =>
-        onLogoClick ? onLogoClick() : navigate("/about")
-      }
-    />
-    {/* <OverlayNav/> */}
-  </header>
-)
+const Header = ({ siteTitle, onLogoClick }) => {
+  // Initialize a state variable called show and set its default value to true
+  const [show, setShow] = useState(false)
+
+
+  return (
+    <header>
+      <OverlayNav
+        show={false}
+      />
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

@@ -13,7 +13,7 @@ export default ({ children, onClose }) => {
         <div className="overlay__inner__content">
           <div className="overlay__inner__transp-layer"></div>
           <div style={{ marginBottom: "105px" }}>
-            <OverlayNav />
+            {/* <OverlayNav /> */}
           </div>
           {children}
           <span className="overlay__close">

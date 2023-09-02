@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header"
 import "../css/global.css"
+import OverlayNav from "./OverlayNav"
 
 const Layout = ({ children, onLogoClick, style }) => {
   const data = useStaticQuery(graphql`
@@ -25,17 +26,18 @@ const Layout = ({ children, onLogoClick, style }) => {
 
   return (
     <div
-      style={{
-        background: "transparent",
-        height: 0,
-        width: 0,
-        ...style,
-      }}
+    style={{
+      background: "transparent",
+      height: 0,
+      width: 0,
+      ...style,
+    }}
     >
+      {/* <OverlayNav/> */}
       {<Header
         siteTitle={data.site.siteMetadata?.title || `SFG`}
         onLogoClick={onLogoClick}
-      />}
+        />}
       <main>{children}</main>
     </div>
   )
