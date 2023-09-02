@@ -6,7 +6,7 @@ import SFGLogo from "../images/sfg-logo.svg"
 import "./Header.css"
 import OverlayNav from "./OverlayNav"
 
-const Header = ({ siteTitle, onLogoClick }) => {
+const Header = ({ siteTitle, onLogoClick, showNavBar }) => {
   // Initialize a state variable called show and set its default value to true
   const [show, setShow] = useState(false)
 
@@ -14,7 +14,9 @@ const Header = ({ siteTitle, onLogoClick }) => {
   return (
     <header>
       <OverlayNav
-        show={false}
+        show={() =>
+          showNavBar ? showNavBar : false
+        }
       />
     </header>
   )

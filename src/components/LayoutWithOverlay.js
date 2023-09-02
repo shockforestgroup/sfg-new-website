@@ -13,7 +13,10 @@ import "../css/global.css"
 
 const LayoutWithOverlay = ({ children }) => {
   return (
-    <Layout style={{ width: "100%", height: "100vh" }}>
+    <Layout
+      style={{ width: "100%", height: "100vh" }}
+      showNavBar={true}
+    >
       {children && (
         <Overlay>
           <main>{children}</main>

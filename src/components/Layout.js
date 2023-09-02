@@ -13,7 +13,7 @@ import Header from "./Header"
 import "../css/global.css"
 import OverlayNav from "./OverlayNav"
 
-const Layout = ({ children, onLogoClick, style }) => {
+const Layout = ({ children, onLogoClick, style, showNavBar }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -33,10 +33,12 @@ const Layout = ({ children, onLogoClick, style }) => {
       ...style,
     }}
     >
-      {/* <OverlayNav/> */}
       {<Header
         siteTitle={data.site.siteMetadata?.title || `SFG`}
         onLogoClick={onLogoClick}
+        showNavBar={() =>
+          showNavBar ? showNavBar : false
+        }
         />}
       <main>{children}</main>
     </div>

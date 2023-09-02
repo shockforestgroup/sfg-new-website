@@ -18,7 +18,8 @@ const About = () => {
   };
 
   return (
-    <Layout>
+    <Layout
+      showNavBar={false}>
       <SEO title="Home" />
     </Layout>
   )
