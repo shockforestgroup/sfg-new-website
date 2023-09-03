@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header"
 import "../css/global.css"
-import OverlayNav from "./OverlayNav"
 
 const Layout = ({ children, onLogoClick, style, showNavBar }) => {
   const data = useStaticQuery(graphql`

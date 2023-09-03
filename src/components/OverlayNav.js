@@ -12,9 +12,9 @@ const navItems = [
 
 const aboutItem = { title: "About", link: "/about" }
 
-const OverlayNav = ({ show, onLogoClick }) => {
+const OverlayNav = ({ showNavBar, onLogoClick }) => {
   // create a state variable called visible and set its initial value to the show prop
-  const [visible, setVisible] = useState(show)
+  const [visible, setVisible] = useState(showNavBar)
 
   // return the component only if the visible state is true
   return visible ? (

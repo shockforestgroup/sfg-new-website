@@ -1,7 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
 
-import OverlayNav from "./OverlayNav"
 import Close from "./Close"
 
 import "./Overlay.css"
@@ -13,7 +12,6 @@ export default ({ children, onClose }) => {
         <div className="overlay__inner__content">
           <div className="overlay__inner__transp-layer"></div>
           <div style={{ marginBottom: "105px" }}>
-            {/* <OverlayNav /> */}
           </div>
           {children}
           <span className="overlay__close">
