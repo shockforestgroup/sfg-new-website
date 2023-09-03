@@ -18,7 +18,7 @@ const ResidencyPage = ({ data }) => {
     project: frontmatter.project,
     link: fields.slug,
   }))
-  const workItems = data.works.nodes.map(({ frontmatter, fields }) => ({
+  const workItems = data?.works.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
     author: frontmatter.author,
