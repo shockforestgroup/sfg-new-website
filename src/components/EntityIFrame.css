@@ -1,9 +1,9 @@
 .entity-iframe {
   border: none;
   position: fixed;
-  top: 10px;
+  top: 55px;
   bottom: 10px;
-  height: calc(100% - 30px);
+  height: calc(100% - 65px);
   width: 100vw;
 }
 
@@ -12,9 +12,9 @@
 /* Move down when navbar switches to mobile mode, so iframe remains fully visible. */
 @media (min-width: 800px) {
   .entity-iframe {
-    top: 10px;
+    top: 55px;
     bottom: 10px;
-    height: calc(100% - 20px);
+    height: calc(100% - 65px);
   }
 }
 
