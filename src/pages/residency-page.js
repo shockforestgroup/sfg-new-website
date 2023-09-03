@@ -41,7 +41,7 @@ const ResidencyPage = ({ data }) => {
       <SEO title="Research Location" />
       <div
       style={{ marginBottom: "100px" }}
-      dangerouslySetInnerHTML={{ __html: data.description.html }}
+      dangerouslySetInnerHTML={{ __html: description }}
       />
       <h2 className="headline-1">Works</h2>
           <ul className="residency-page__list">
