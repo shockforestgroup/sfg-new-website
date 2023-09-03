@@ -14,9 +14,7 @@ const Header = ({ siteTitle, onLogoClick, showNavBar }) => {
   return (
     <header>
       <OverlayNav
-        show={() =>
-          showNavBar ? showNavBar : false
-        }
+        showNavBar= {showNavBar}
       />
     </header>
   )

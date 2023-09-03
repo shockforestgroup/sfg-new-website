@@ -25,20 +25,18 @@ const Layout = ({ children, onLogoClick, style, showNavBar }) => {
 
   return (
     <div
-    style={{
-      background: "transparent",
-      height: 0,
-      width: 0,
-      ...style,
-    }}
+      style={{
+        background: "transparent",
+        height: 0,
+        width: 0,
+        ...style,
+      }}
     >
       {<Header
         siteTitle={data.site.siteMetadata?.title || `SFG`}
         onLogoClick={onLogoClick}
-        showNavBar={() =>
-          showNavBar ? showNavBar : false
-        }
-        />}
+        showNavBar={showNavBar}
+      />}
       <main>{children}</main>
     </div>
   )
