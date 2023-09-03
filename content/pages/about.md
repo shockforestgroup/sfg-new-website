@@ -54,5 +54,3 @@ Immersion into this hyperlocal environment has opened our eyes to what it means 
 *More information about the Shock Forest Group can be found on [Het Hem’s website](https://hethem.nl/en/Chapter-Two/Door-Nicolas-Jaar-Shock-Forest-Group).*
 <br />
 <br />
-
-*Web development - [Alexa Steinbrück](https://www.alexasteinbruck.com/) & [Jelger Kroese](https://www.jelgerkroese.com/).* *Based on the work The Entity, by Shock Forest Group*.
