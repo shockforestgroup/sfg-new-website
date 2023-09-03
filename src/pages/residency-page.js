@@ -10,7 +10,7 @@ import { enableBodyScroll } from 'body-scroll-lock';
 import "./residency-page.css"
 
 const ResidencyPage = ({ data }) => {
-  const description = data.description.html
+  const description = (data.description != null ? data.description.html : "no description found"); 
   const essayItems = data.essays.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
