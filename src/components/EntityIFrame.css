@@ -1,16 +1,16 @@
 .entity-iframe {
   border: none;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100%;
+  top: 125px;
+  bottom: 20px;
+  height: calc(100% - 145px);
   width: 100vw;
 }
 
 /* From Entity repository: Minimum height for entity is 635, smaller than that it will be cut off at the top and bottom */
 
-/* create top/bottom margin of 40 when window height greater than 835 (= 635 + 2*100) */
-@media (min-height: 835px) {
+/* Move down when navbar switches to mobile mode, so iframe remains fully visible. */
+@media (min-width: 800px) {
   .entity-iframe {
     top: 60px;
     bottom: 20px;
@@ -18,9 +18,20 @@
   }
 }
 
-/* create top margin of when device-height smaller than 700px so logo doesnt overlap entity on small mobile devices */
-@media (max-device-height: 700px) {
+/* create top/bottom margin of 40 when window height greater than 835 (= 635 + 2*100) */
+/* @media (min-height: 835px) {
   .entity-iframe {
-    top: 20px;
+    top: 60px;
+    bottom: 20px;
+    height: calc(100% - 80px);
+  }
+} */
+
+/* create top margin of when device-height smaller than 700px so logo doesnt overlap entity on small mobile devices */
+@media (max-width: 800px) and (max-device-height: 780px) {
+  .entity-iframe {
+    top: 150px;
+    bottom: 20px;
+    height: calc(100% - 170px);
   }
 }

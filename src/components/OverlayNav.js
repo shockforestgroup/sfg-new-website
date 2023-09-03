@@ -18,27 +18,31 @@ const OverlayNav = ({ show, onLogoClick }) => {
 
   // return the component only if the visible state is true
   return visible ? (
-    <nav className={"overlay-nav bg-black"} >
-      <button
-        className="overlay-nav__item white nowrap bg-black ba b--black"
+    <nav className={"overlay-nav bg-black nowrap"} >
+      <a
+        className="overlay-nav_project-items overlay-nav__logo"
         cursor="pointer"
         onClick={() =>
           onLogoClick ? onLogoClick() : setVisible(!visible)
         }
       >
         Shock Forest Group
-      </button>
+      </a>
       <div className="overlay-nav_project-items">
-        {navItems.map(item => (
-          <Link
-            to={item.link}
-            className="overlay-nav__item"
-            activeClassName="overlay-nav__item--active"
-          >
-            {item.title}
-          </Link>
-        ))}
-        --
+        <div className="row">
+          {navItems.map(item => (
+            <Link
+              to={item.link}
+              className="overlay-nav__item"
+              activeClassName="overlay-nav__item--active"
+            >
+              {item.title}
+            </Link>
+          ))}
+        </div>
+        <div className="overlay-nav__item">
+          --
+        </div>
         <Link
           to={aboutItem.link}
           className="overlay-nav__item"
@@ -53,7 +57,7 @@ const OverlayNav = ({ show, onLogoClick }) => {
     <div className="overlay-nav_button">
       < SFGLogo
         style={{ position: "absolute" }}
-        className="overlay-nav__item nowrap bg-black ba b--black"
+        className="overlay-nav_project-items overlay-nav__logo nowrap bg-black ba b--black"
         width="40px"
         height="20px"
         fill="red"

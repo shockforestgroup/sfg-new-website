@@ -3,10 +3,13 @@
 
 .overlay-nav {
   text-transform: lowercase;
+  text-align: start;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: left; */
+  justify-content: flex-start;
   position: fixed;
   font-size: 17px;
   /* padding-left: 30px; */
@@ -17,10 +20,11 @@
   /* Make the div element a flex container */
   display: flex;
   /* Align the items horizontally */
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* Set the width of the div element to fill the remaining space */
   flex: 1;
-  text-align: end;
+  text-align: start;
+  flex-direction: column;
 }
 
 .overlay-nav_button {
@@ -47,19 +51,42 @@ a:hover.overlay-nav__item {
 a:active.overlay-nav__item {
   color: white;
 }
+a:link.overlay-nav__logo {
+  color: white;
+}
+a:visited.overlay-nav__logo {
+  color: white;
+}
+a:hover.overlay-nav__logo {
+  color: white;
+}
+a:active.overlay-nav__logo {
+  color: white;
+}
+
+.overlay-nav__logo {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  margin: 0 10px;
+  position: relative;
+  opacity: 1;
+}
 
 .overlay-nav__item {
   color: inherit;
   text-decoration: none;
   border-bottom: 2px solid black;
   margin: 0 10px;
-}
-
-.overlay-nav__item {
   position: relative;
+  opacity: 0.55;
 }
 
-.overlay-nav__item--active:before {
+.overlay-nav__item:hover {
+  opacity: 0.75;
+}
+
+/* .overlay-nav__item--active:before {
   display: flex;
   justify-content: center;
   content: ">";
@@ -67,6 +94,10 @@ a:active.overlay-nav__item {
   font-size: 12px;
   left: -10px;
   line-height: 28px;
+} */
+
+.overlay-nav__item--active {
+  opacity: 1;
 }
 
 @media (min-width: 800px) {
@@ -74,6 +105,16 @@ a:active.overlay-nav__item {
     font-size: 22px;
     justify-content: space-between;
     padding-left: 0;
+    flex-direction: row;
+  }
+
+  .overlay-nav_project-items {
+    /* Align the items horizontally */
+    justify-content: space-between;
+    /* Set the width of the div element to fill the remaining space */
+    flex: 0;
+    text-align: end;
+    flex-direction: row;
   }
 
   .overlay-nav__item {
