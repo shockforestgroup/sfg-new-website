@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/LayoutWithOverlay"
@@ -10,7 +9,8 @@ import { enableBodyScroll } from 'body-scroll-lock';
 import "./residency-page.css"
 
 const ResidencyPage = ({ data }) => {
-  const description = (data.description != null ? data.description.html : "no description found"); 
+  // const description = (data.description != null ? data.description.html : "no description found");
+  const description = data?.description 
   const essayItems = data.essays.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
