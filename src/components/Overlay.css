@@ -64,9 +64,9 @@ a:active {
 
 @media (min-width: 800px) {
   .overlay {
-    top: 60px;
+    top: 45px;
     width: 100vw;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 45px);
   }
   .overlay__close {
     right: 31px;

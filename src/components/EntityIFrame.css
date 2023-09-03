@@ -1,9 +1,9 @@
 .entity-iframe {
   border: none;
   position: fixed;
-  top: 125px;
-  bottom: 20px;
-  height: calc(100% - 145px);
+  top: 10px;
+  bottom: 10px;
+  height: calc(100% - 30px);
   width: 100vw;
 }
 
@@ -12,9 +12,9 @@
 /* Move down when navbar switches to mobile mode, so iframe remains fully visible. */
 @media (min-width: 800px) {
   .entity-iframe {
-    top: 60px;
-    bottom: 20px;
-    height: calc(100% - 80px);
+    top: 10px;
+    bottom: 10px;
+    height: calc(100% - 20px);
   }
 }
 
@@ -30,8 +30,8 @@
 /* create top margin of when device-height smaller than 700px so logo doesnt overlap entity on small mobile devices */
 @media (max-width: 800px) and (max-device-height: 780px) {
   .entity-iframe {
-    top: 150px;
-    bottom: 20px;
-    height: calc(100% - 170px);
+    top: 20px;
+    bottom: 10px;
+    height: calc(100% - 30px);
   }
 }

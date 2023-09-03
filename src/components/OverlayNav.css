@@ -102,7 +102,7 @@ a:active.overlay-nav__logo {
 
 @media (min-width: 800px) {
   .overlay-nav {
-    font-size: 22px;
+    font-size: 17px;
     justify-content: space-between;
     padding-left: 0;
     flex-direction: row;
