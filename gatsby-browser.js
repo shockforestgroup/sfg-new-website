@@ -18,7 +18,7 @@ export const wrapRootElement = ({ element }) => {
           width: "100%",
         }}
       ></div>
-      <div
+      {/* <div
         style={{
           zIndex: 1,
           position: "absolute",
@@ -31,7 +31,7 @@ export const wrapRootElement = ({ element }) => {
         }}
       >
         <EntityIFrame />
-      </div>
+      </div> */}
       <div
         style={{
           zIndex: 2,
