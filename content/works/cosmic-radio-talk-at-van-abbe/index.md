@@ -3,7 +3,7 @@ date: "2023"
 title: COSMIC RADIO talk at VAN ABBE
 author: Eindhoven, The Netherlands
 project: cosmic radio
-coverImage: photo1682023291-2.jpeg
+coverImage: photo1682023291-2-2.jpg
 ---
 ![](photo1682023291-2.jpeg)
 

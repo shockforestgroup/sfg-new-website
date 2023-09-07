@@ -3,9 +3,9 @@ date: "2023"
 title: COSMIC RADIO RESEARCH
 author: Eindhoven, The Netherlands
 project: cosmic radio
-coverImage: sfg-cosmic-radio.jpg
+coverImage: sfg_cosmic_radio.jpg
 ---
-![](sfg-cosmic-radio.jpg)
+![](sfg_cosmic_radio.jpg)
 
 When we set out to learn about cosmic radio, we started with the Phillips company’s early production of radios and its shortwave radio broadcasting station called PHOHI for Dutch citizens living in occupied Indonesia. The first radio broadcasts from the Netherlands to the so-called Dutch East Indies were sent via longwave from Radio Kootwijk, the first site we visited on April 4. When we arrived, we heard guns firing from a military base nearby.
 
