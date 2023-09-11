@@ -36,33 +36,31 @@ const ResidencyPage = ({ data }) => {
   };
 
   return (
-    <Layout>
-      <div className="residency-page">
-        <SEO title="Research Location" />
-        <Link>
-          <div className="residency-page__heading">
-            SHOCK FOREST GROUP
-          </div>
-        </Link>
-        <ul className="residency-page__list">
-          {workItems.map((el, index) => (
-            <li className="residency-page__item" key={index}>
-              <Link to={el.link}>
-                {/* <Img 
+    <div className="residency-page">
+      <SEO title="Research Location" />
+      <Link>
+        <div className="residency-page__heading">
+          SHOCK FOREST GROUP
+        </div>
+      </Link>
+      <ul className="residency-page__list">
+        {workItems.map((el, index) => (
+          <li className="residency-page__item" key={index}>
+            <Link to={el.link}>
+              {/* <Img 
                         fluid={el.coverImage.childImageSharp.fluid}
                         alt="cover img"
                         title="test"
                       /> */}
-                <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
-                  {String(workItems.length - index).padStart(2, '0')}. {el.title}
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+              <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
+                {String(workItems.length - index).padStart(2, '0')}. {el.title}
+              </p>
+            </Link>
+          </li>
+        ))}
+      </ul>
 
-      </div>
-    </Layout>
+    </div>
   )
 }
 
