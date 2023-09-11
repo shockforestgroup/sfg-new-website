@@ -2,6 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
+@font-face {
+  font-family: "Helvetica Narrow CE Regular";
+  src: url("/fonts/HVN_CE.TTF") format("truetype"),
+       url("/fonts/HVNCE.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: "Helvetica Narrow CE Bold";
+  src: url("/fonts/HVNB_CE.TTF") format("truetype"),
+       url("/fonts/HVNBCE.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
