@@ -5,6 +5,7 @@ import React, { useState } from "react" // Import useState hook
 import SFGLogo from "../images/sfg-logo.svg"
 import "./Header.css"
 import OverlayNav from "./OverlayNav"
+import { Link } from "gatsby"
 
 const Header = ({ siteTitle, onLogoClick, showNavBar }) => {
   // Initialize a state variable called show and set its default value to true

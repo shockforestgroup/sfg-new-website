@@ -37,23 +37,29 @@ const ResidencyPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Research Location" />
-      <ul className="residency-page__list nowrap">
-        {workItems.map(el => (
-          <li className="residency-page__item">
-            <Link to={el.link}>
-              {/* <Img 
+      <div className="residency-page">
+        <SEO title="Research Location" />
+        <Link className="residency-page__item">
+          SHOCK FOREST GROUP
+        </Link>
+        <ul className="residency-page__list">
+          {workItems.map((el, index) => (
+            <li className="residency-page__item" key={index}>
+              <Link to={el.link}>
+                {/* <Img 
                         fluid={el.coverImage.childImageSharp.fluid}
                         alt="cover img"
                         title="test"
                       /> */}
-              <p className="top-0 left-0 right-0 bottom-0 flex items-center justify-left white">
-                {el.title}
-              </p>
-            </Link>
-          </li>
-        ))}
-      </ul>
+                <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
+                  {workItems.length - index} {el.title}
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+      </div>
     </Layout>
   )
 }
