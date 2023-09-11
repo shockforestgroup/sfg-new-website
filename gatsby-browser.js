@@ -6,6 +6,7 @@
 
 import React from "react"
 import EntityIFrame from "./src/components/EntityIFrame"
+import './src/css/global.css';
 
 export const wrapRootElement = ({ element }) => {
   return (

@@ -2,22 +2,22 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../components/LayoutWithOverlay"
+import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import { enableBodyScroll } from 'body-scroll-lock';
 
 import "./residency-page.css"
 
 const ResidencyPage = ({ data }) => {
-  const description = data?.description.html
-  const essayItems = data?.essays.nodes.map(({ frontmatter, fields }) => ({
+  const description = data?.description?.html
+  const essayItems = data?.essays?.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
     author: frontmatter.author,
     project: frontmatter.project,
     link: fields.slug,
   }))
-  const workItems = data?.works.nodes.map(({ frontmatter, fields }) => ({
+  const workItems = data?.works?.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
     author: frontmatter.author,
@@ -38,7 +38,7 @@ const ResidencyPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Research Location" />
-      <ul className="residency-page__list">
+      <ul className="residency-page__list nowrap">
         {workItems.map(el => (
           <li className="residency-page__item">
             <Link to={el.link}>

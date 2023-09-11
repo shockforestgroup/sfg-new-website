@@ -1,3 +1,16 @@
+:root {
+
+  /* Colors: */
+  --unnamed-color-ffffff: #FFFFFF;
+  
+  /* Font/text values */
+  --unnamed-font-family-helvetica-narrow-ce: 'Helvetica Narrow CE Regular';
+  --unnamed-font-size-60: 20px;
+  --unnamed-character-spacing-1-2: 1.2px;
+  --unnamed-line-spacing-66: 66px;
+  --unnamed-line-spacing-90: 90px;
+}
+
 .residency-page {
 }
 .residency-page__section {
@@ -5,7 +18,13 @@
 .residency-page__list {
 }
 .residency-page__item {
-  margin-bottom: 35px;
+  font-family: var(--unnamed-font-family-helvetica-narrow-ce);
+  font-weight: normal;
+  font-size: var(--unnamed-font-size-60);
+  letter-spacing: var(--unnamed-character-spacing-1-2);
+  color: var(--unnamed-color-ffffff);
+  margin-bottom: 5px;
+  text-decoration: none;
 }
 
 .residency-page__item__link {
@@ -13,40 +32,49 @@
   color: inherit;
 }
 
-a:link.residency-page__item__link {
-  color: white;
+a{
+  text-decoration: none;
 }
-a:visited.residency-page__item__link {
+
+a:link.residency-page__item {
   color: white;
+  text-decoration: none;
 }
-a:hover.residency-page__item__link {
+a:visited.residency-page__item {
   color: white;
+  text-decoration: none;
 }
-a:active.residency-page__item__link {
+a:hover.residency-page__item {
   color: white;
+  text-decoration: none;
+}
+a:active.residency-page__item {
+  color: white;
+  text-decoration: none;
 }
 
 
 @media (min-width: 800px) {
-  /* .residency-page__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px !important;
-  } */
+  .residency-page__list {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* margin: -15px !important; */
+  }
   .residency-page__item {
-    margin-bottom: 5px;
-    flex: 0 0 50%;
-    padding: 5px;
+    /* margin-bottom: 5px; */
+    /* flex: 0 0 50%; */
+    /* padding: 5px; */
+    margin-left: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .residency-page {
-    display: flex;
-    margin: -15px;
+    /* display: flex;
+    margin: -15px; */
   }
   .residency-page__section {
-    flex: 0 0 50%;
-    padding: 15px;
+    /* flex: 0 0 50%;
+    padding: 15px; */
   }
 }
