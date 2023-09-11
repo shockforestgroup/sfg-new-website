@@ -39,8 +39,10 @@ const ResidencyPage = ({ data }) => {
     <Layout>
       <div className="residency-page">
         <SEO title="Research Location" />
-        <Link className="residency-page__item">
-          SHOCK FOREST GROUP
+        <Link>
+          <div className="residency-page__heading">
+            SHOCK FOREST GROUP
+          </div>
         </Link>
         <ul className="residency-page__list">
           {workItems.map((el, index) => (
@@ -52,7 +54,7 @@ const ResidencyPage = ({ data }) => {
                         title="test"
                       /> */}
                 <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
-                  {workItems.length - index} {el.title}
+                  {String(workItems.length - index).padStart(2, '0')}. {el.title}
                 </p>
               </Link>
             </li>

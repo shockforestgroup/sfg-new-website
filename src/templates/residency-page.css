@@ -13,20 +13,25 @@
 
 .residency-page {
   width: 100vw;
-}
-.residency-page__section {
-}
-.residency-page__list {
-}
-
-.residency-page__item {
+  margin-top: 20px;
   font-family: var(--unnamed-font-family-helvetica-narrow-ce);
   font-weight: normal;
   font-size: var(--unnamed-font-size-60);
   letter-spacing: var(--unnamed-character-spacing-1-2);
   color: var(--unnamed-color-ffffff);
-  margin-bottom: 5px;
   text-decoration: none;
+}
+.residency-page__heading {
+  max-width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+.residency-page__list {
+}
+
+.residency-page__item {
+  margin-bottom: 5px;
   max-width: 100%;
   margin-left: 30px;
   margin-right: 30px;
@@ -38,6 +43,7 @@
 }
 
 a{
+  color: white;
   text-decoration: none;
 }
 
@@ -58,6 +64,22 @@ a:active.residency-page__item {
   text-decoration: none;
 }
 
+a:link.residency-page__heading {
+  color: white;
+  text-decoration: none;
+}
+a:visited.residency-page__heading {
+  color: white;
+  text-decoration: none;
+}
+a:hover.residency-page__heading {
+  color: white;
+  text-decoration: none;
+}
+a:active.residency-page__heading {
+  color: white;
+  text-decoration: none;
+}
 
 @media (min-width: 800px) {
   .residency-page__list {
