@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import { navigate } from 'gatsby';
+import { Link, navigate } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
@@ -8,7 +7,7 @@ import { enableBodyScroll } from 'body-scroll-lock';
 
 import "./residency-page.css"
 
-const ResidencyPage = ({ data }, location) => {
+const ResidencyPage = ({ data , location }) => {
   const description = data?.description?.html
   const essayItems = data?.essays?.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
@@ -66,7 +65,10 @@ const ResidencyPage = ({ data }, location) => {
             <Link
               to={el.link}
               state={{ subPageId: index }}
-              onClick={() => handleLinkClick(index)}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick(index);
+              }}
             >
               <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
                 {String(workItems.length - index).padStart(2, '0')}. {el.title}
@@ -76,9 +78,9 @@ const ResidencyPage = ({ data }, location) => {
           </li>
         ))}
       </ul>
-
     </div>
   )
 }
 
 export default ResidencyPage
+

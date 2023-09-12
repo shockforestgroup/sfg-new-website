@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
 // Import the ResidencyPage component
-import ResidencyPage from "../templates/residency-page"
+import ResidencyPage from "../components/residency-page"
 
 const Hembrug = ({data}) => {
     return (

@@ -1,15 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
-import ResidencyPage from "../templates/residency-page"
+import ResidencyPage from "../components/residency-page"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import { disableBodyScroll } from 'body-scroll-lock';
 import 'tachyons';
 
 
-const About = ({data}) => {
+const About = ({data, location}) => {
 
   React.useEffect(() => {
     gatsbyDisableBodyScroll();
@@ -23,6 +22,7 @@ const About = ({data}) => {
   return (
     <ResidencyPage
       data={data}
+      location={location}
     >
       <SEO title="Home" />
     </ResidencyPage>

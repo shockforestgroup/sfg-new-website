@@ -14,7 +14,7 @@ const Template = ({ data }) => {
   }
 
   return (
-    <Layout>
+    // <Layout>
       <div className="eow">
         <SEO title={article.title} />
         <h1 className="headline-1">{article.title}</h1>
@@ -26,7 +26,7 @@ const Template = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: article.html }}
         />
       </div>
-    </Layout>
+    // </Layout>
   )
 }
 
