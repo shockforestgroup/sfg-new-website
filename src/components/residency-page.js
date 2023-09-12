@@ -52,15 +52,15 @@ const ResidencyPage = ({ data, location }) => {
     // });
   // };
 
-  // //Bodyscroll
-  // React.useEffect(() => {
-  //   gatsbyEnableBodyScroll();
-  // }, []);
+  //Bodyscroll
+  React.useEffect(() => {
+    gatsbyEnableBodyScroll();
+  }, []);
 
-  // const gatsbyEnableBodyScroll = (event) => {
-  //   enableBodyScroll(document.body);
-  //   document.getElementsByTagName("html")[0].style = "";
-  // };
+  const gatsbyEnableBodyScroll = (event) => {
+    enableBodyScroll(document.body);
+    document.getElementsByTagName("html")[0].style = "";
+  };
 
   return (
     <div className="residency-page">
@@ -104,7 +104,7 @@ const ResidencyPage = ({ data, location }) => {
             > */}
 
             {/* </Link> */}
-            {expandedId === index && <div dangerouslySetInnerHTML={{ __html: el.html }}/>}
+            {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }}/>}
           </li>
         ))}
       </ul>

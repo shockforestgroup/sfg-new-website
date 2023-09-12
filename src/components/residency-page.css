@@ -5,8 +5,15 @@
   
   /* Font/text values */
   --unnamed-font-family-helvetica-narrow-ce: 'Helvetica Narrow CE Regular';
+  --unnamed-font-size-15: 15px;
+  --unnamed-font-size-20: 20px;
   --unnamed-font-size-60: 24px;
+  --unnamed-character-spacing-0-38: 0.38px;
+  --unnamed-character-spacing-0-5: 0.5px;
   --unnamed-character-spacing-1-2: 1.2px;
+  --unnamed-line-spacing-17-5: 17.5px;
+  --unnamed-line-spacing-25: 25px;
+  --unnamed-line-spacing-30: 30px;
   --unnamed-line-spacing-66: 66px;
   --unnamed-line-spacing-90: 90px;
 }
@@ -36,6 +43,32 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+.residency-page__item div:hover p {
+  font-weight: bold;
+}
+
+
+.residency-page__content {
+  max-width: 55rem;
+  margin-top: 10px;
+  left: 0;
+  font-family: var(--unnamed-font-family-helvetica-narrow-ce);
+  font-weight: normal;
+  font-size: var(--unnamed-font-size-15);
+  letter-spacing: var(--unnamed-character-spacing-0-38);
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+}
+
+.residency-page__content .gatsby-resp-image-wrapper {
+  display: block;
+  width: 100%;
+  max-width: 100% !important;
+  height: auto;
+  margin: 0 auto !important;
+  text-align: left;
+}
+
 
 .residency-page__item__link {
   text-decoration: none;
