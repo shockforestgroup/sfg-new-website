@@ -7,7 +7,7 @@ import { enableBodyScroll } from 'body-scroll-lock';
 
 import "./residency-page.css"
 
-const ResidencyPage = ({ data , location }) => {
+const ResidencyPage = ({ data, location }) => {
   const description = data?.description?.html
   const essayItems = data?.essays?.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
@@ -16,13 +16,14 @@ const ResidencyPage = ({ data , location }) => {
     project: frontmatter.project,
     link: fields.slug,
   }))
-  const workItems = data?.works?.nodes.map(({ frontmatter, fields }) => ({
+  const workItems = data?.works?.nodes.map(({ frontmatter, fields, html }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
     author: frontmatter.author,
     project: frontmatter.project,
     coverImage: frontmatter.coverImage,
     link: fields.slug,
+    html: html,
   }))
 
   //handling expand collapse and url setting
@@ -36,20 +37,20 @@ const ResidencyPage = ({ data , location }) => {
 
   const handleLinkClick = (id) => {
     setExpandedId(id);
-    navigate(`/${id}`, {
+    navigate(`/dynamic/${id}`, {
       state: { subPageId: id },
     });
   };
 
-  //Bodyscroll
-  React.useEffect(() => {
-    gatsbyEnableBodyScroll();
-  }, []);
+  // //Bodyscroll
+  // React.useEffect(() => {
+  //   gatsbyEnableBodyScroll();
+  // }, []);
 
-  const gatsbyEnableBodyScroll = (event) => {
-    enableBodyScroll(document.body);
-    document.getElementsByTagName("html")[0].style = "";
-  };
+  // const gatsbyEnableBodyScroll = (event) => {
+  //   enableBodyScroll(document.body);
+  //   document.getElementsByTagName("html")[0].style = "";
+  // };
 
   return (
     <div className="residency-page">
@@ -62,19 +63,27 @@ const ResidencyPage = ({ data , location }) => {
       <ul className="residency-page__list">
         {workItems.map((el, index) => (
           <li className="residency-page__item" key={index}>
-            <Link
-              to={el.link}
+            <a
+              href={`/dynamic/${index}`}
+              onClick={(e) => {
+                e.preventDefault();
+                handleLinkClick(index);
+              }}>
+              <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
+                {String(workItems.length - index).padStart(2, '0')}. {el.title}
+              </p>
+            </a>
+            {/* <Link
+              to={`/${index}`}
               state={{ subPageId: index }}
               onClick={(e) => {
                 e.preventDefault();
                 handleLinkClick(index);
               }}
-            >
-              <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
-                {String(workItems.length - index).padStart(2, '0')}. {el.title}
-              </p>
-            </Link>
-            {expandedId === index && <div>{`Content for page ${index}`}</div>}
+            > */}
+
+            {/* </Link> */}
+            {expandedId === index && <div>{el.html}</div>}
           </li>
         ))}
       </ul>
