@@ -1,6 +1,6 @@
 ---
 date: "2023"
-title: COSMIC RADIO INSTALLATION AT STRP FESTIVAL
+title: Cosmic Radio installation at STRP Festival
 author: Eindhoven, The Netherlands
 project: cosmic radio
 coverImage: boudewijnbollmann_strp2023_12april2023_opening_lores-54.jpg
