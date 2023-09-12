@@ -36,11 +36,21 @@ const ResidencyPage = ({ data, location }) => {
   }, [location]);
 
   const handleLinkClick = (id) => {
-    setExpandedId(id);
-    navigate(`/dynamic/${id}`, {
-      state: { subPageId: id },
-    });
+    if (expandedId === id) {
+      // Collapse the expanded section if it's already expanded
+      setExpandedId(null);
+    } else {
+      // Otherwise, expand this section
+      setExpandedId(id);
+    }
   };
+  
+  // const handleLinkClick = (id) => {
+  //   setExpandedId(id);
+    // navigate(`/dynamic/${id}`, {
+    //   state: { subPageId: id },
+    // });
+  // };
 
   // //Bodyscroll
   // React.useEffect(() => {
@@ -63,7 +73,18 @@ const ResidencyPage = ({ data, location }) => {
       <ul className="residency-page__list">
         {workItems.map((el, index) => (
           <li className="residency-page__item" key={index}>
-            <a
+            <div
+              role="button" 
+              tabIndex={0}
+              onClick={() => handleLinkClick(index)}
+              onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(index)}
+              style={{ cursor: "pointer" }}
+            >
+              <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
+                {String(workItems.length - index).padStart(2, '0')}. {el.title}
+              </p>
+            </div>
+            {/* <a
               href={`/dynamic/${index}`}
               onClick={(e) => {
                 e.preventDefault();
@@ -72,7 +93,7 @@ const ResidencyPage = ({ data, location }) => {
               <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
                 {String(workItems.length - index).padStart(2, '0')}. {el.title}
               </p>
-            </a>
+            </a> */}
             {/* <Link
               to={`/${index}`}
               state={{ subPageId: index }}
@@ -83,7 +104,7 @@ const ResidencyPage = ({ data, location }) => {
             > */}
 
             {/* </Link> */}
-            {expandedId === index && <div>{el.html}</div>}
+            {expandedId === index && <div dangerouslySetInnerHTML={{ __html: el.html }}/>}
           </li>
         ))}
       </ul>
