@@ -27,6 +27,7 @@
   letter-spacing: var(--unnamed-character-spacing-1-2);
   color: var(--unnamed-color-ffffff);
   text-decoration: none;
+  overflow: scroll;
 }
 .residency-page__heading {
   max-width: 100%;

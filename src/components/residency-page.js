@@ -8,7 +8,7 @@ import { enableBodyScroll } from 'body-scroll-lock';
 import "./residency-page.css"
 
 const ResidencyPage = ({ data, location }) => {
-  const description = data?.description?.html
+  const about = data?.about?.html
   const essayItems = data?.essays?.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
@@ -28,6 +28,8 @@ const ResidencyPage = ({ data, location }) => {
 
   //handling expand collapse and url setting
   const [expandedId, setExpandedId] = useState(null);
+  //handling expand collapse and url setting
+  const [isExpandedAbout, setIsExpandedAbout] = useState(false);
 
   useEffect(() => {
     if (location.state && location.state.subPageId) {
@@ -44,12 +46,21 @@ const ResidencyPage = ({ data, location }) => {
       setExpandedId(id);
     }
   };
-  
+  const handleAboutClick = (isExpanded) => {
+    if (isExpanded) {
+      // Collapse the expanded section if it's already expanded
+      setIsExpandedAbout(false);
+    } else {
+      // Otherwise, expand this section
+      setIsExpandedAbout(true);
+    }
+  };
+
   // const handleLinkClick = (id) => {
   //   setExpandedId(id);
-    // navigate(`/dynamic/${id}`, {
-    //   state: { subPageId: id },
-    // });
+  // navigate(`/dynamic/${id}`, {
+  //   state: { subPageId: id },
+  // });
   // };
 
   //Bodyscroll
@@ -65,16 +76,30 @@ const ResidencyPage = ({ data, location }) => {
   return (
     <div className="residency-page">
       <SEO title="Research Location" />
-      <Link>
+      {/* <Link>
         <div className="residency-page__heading">
           SHOCK FOREST GROUP
         </div>
-      </Link>
+      </Link> */}
+      <div
+        role="button"
+        tabIndex={0}
+        onClick={() => handleAboutClick(isExpandedAbout)}
+        onKeyDown={(e) => e.key === 'Enter' && handleAboutClick(isExpandedAbout)}
+        style={{ cursor: "pointer" }}
+        >
+        <p className="residency-page__heading">
+          SHOCK FOREST GROUP
+        </p>
+      </div>
+      {isExpandedAbout && <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} />}
+      <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} />
+
       <ul className="residency-page__list">
         {workItems.map((el, index) => (
           <li className="residency-page__item" key={index}>
             <div
-              role="button" 
+              role="button"
               tabIndex={0}
               onClick={() => handleLinkClick(index)}
               onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(index)}
@@ -104,7 +129,7 @@ const ResidencyPage = ({ data, location }) => {
             > */}
 
             {/* </Link> */}
-            {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }}/>}
+            {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }} />}
           </li>
         ))}
       </ul>

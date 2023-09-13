@@ -38,6 +38,12 @@ export default About
 
 export const query = graphql`
   query PageQueryAllActivities {
+    about: markdownRemark(fields: { slug: { eq: "/pages/about/" } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
     works: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/(works)/" } }
     ) {
