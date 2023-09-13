@@ -8,7 +8,7 @@ import { enableBodyScroll } from 'body-scroll-lock';
 import "./residency-page.css"
 
 const ResidencyPage = ({ data, location }) => {
-  const about = data?.about?.html
+  const aboutHtml = data?.about?.html
   const essayItems = data?.essays?.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
     date: frontmatter.date,
@@ -87,13 +87,13 @@ const ResidencyPage = ({ data, location }) => {
         onClick={() => handleAboutClick(isExpandedAbout)}
         onKeyDown={(e) => e.key === 'Enter' && handleAboutClick(isExpandedAbout)}
         style={{ cursor: "pointer" }}
-        >
+      >
         <p className="residency-page__heading">
-          SHOCK FOREST GROUP
+          SHOCK FOREST GROUP {isExpandedAbout && ""}
         </p>
       </div>
-      {isExpandedAbout && <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} />}
-      <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} />
+      {isExpandedAbout && <div className="residency-page__heading" dangerouslySetInnerHTML={{ __html: aboutHtml }} />}
+      {/* <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} /> */}
 
       <ul className="residency-page__list">
         {workItems.map((el, index) => (
