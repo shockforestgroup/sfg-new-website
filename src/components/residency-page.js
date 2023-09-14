@@ -71,18 +71,22 @@ const ResidencyPage = ({ data, location }) => {
         </div>
       </Link> */}
       <div
-        role="button"
-        tabIndex={0}
-        onClick={() => handleAboutClick(isExpandedAbout)}
-        onKeyDown={(e) => e.key === 'Enter' && handleAboutClick(isExpandedAbout)}
-        style={{ cursor: "pointer" }}
         className="residency-page__heading"
       >
-        SHOCK FOREST GROUP
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={() => handleAboutClick(isExpandedAbout)}
+          onKeyDown={(e) => e.key === 'Enter' && handleAboutClick(isExpandedAbout)}
+          style={{ cursor: "pointer"}}
+          className={isExpandedAbout ? "residency-page__heading-button" : ""}
+        >
+          SHOCK FOREST GROUP 
+        </div>
+        {/* {isExpandedAbout && <div className="residency-page__about">is a decentralized collective consisting of artists,</div>} */}
+        {isExpandedAbout && <div className="residency-page__about" dangerouslySetInnerHTML={{ __html: aboutHtml }} />}
+        {/* <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} /> */}
       </div>
-      {isExpandedAbout && <div className="residency-page__about">is a decentralized collective consisting of artists,</div>}
-      {isExpandedAbout && <div className="residency-page__about" dangerouslySetInnerHTML={{ __html: aboutHtml }} />}
-      {/* <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} /> */}
       <div className="residency-page__list">
         <ul className="residency-page__list">
           {workItems.map((el, index) => (
@@ -94,7 +98,7 @@ const ResidencyPage = ({ data, location }) => {
                 onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(index)}
                 style={{ cursor: "pointer" }}
               >
-                <div className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
+                <div className="residency-page__item__button top-0 left-0 right-0 bottom-0 items-center justify-left white">
                   {String(workItems.length - index).padStart(2, '0')}. {el.title}
                 </div>
               </div>

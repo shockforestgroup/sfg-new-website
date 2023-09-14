@@ -19,7 +19,7 @@
 }
 
 .residency-page {
-  width: 100vw;
+  width: 95vw;
   margin-top: 10px;
   font-family: var(--unnamed-font-family-helvetica-narrow-ce);
   font-weight: normal;
@@ -27,17 +27,21 @@
   letter-spacing: var(--unnamed-character-spacing-1-2);
   color: var(--unnamed-color-ffffff);
   text-decoration: none;
-  background-color: black;
+  /* background-color: black; */
   /* overflow: scroll; */
 }
-.residency-page__heading, .residency-page__about {
+.residency-page__heading {
   max-width: 55rem;
   margin-left: 20px;
   margin-right: 0px;
-  display: inline-block;
+  /* display: inline-block; */
+}
+.residency-page__heading-button {
+  float:left;
+  margin-right: 7px;
 }
 
-.residency-page__heading:hover {
+.residency-page__heading-button:hover {
   font-weight: bold;
 }
 
@@ -51,7 +55,9 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-.residency-page__item div:hover {
+
+
+.residency-page__item__button:hover {
   font-weight: bold;
 }
 
@@ -78,10 +84,6 @@
 }
 
 
-.residency-page__item__link {
-  text-decoration: none;
-  color: inherit;
-}
 
 a{
   color: white;
