@@ -27,15 +27,21 @@
   letter-spacing: var(--unnamed-character-spacing-1-2);
   color: var(--unnamed-color-ffffff);
   text-decoration: none;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
-.residency-page__heading {
+.residency-page__heading, .residency-page__about {
   max-width: 55rem;
   margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 50px;
+  margin-right: 0px;
+  display: inline-block;
 }
+
+.residency-page__heading:hover {
+  font-weight: bold;
+}
+
 .residency-page__list {
+  margin-top: 50px;
 }
 
 .residency-page__item {

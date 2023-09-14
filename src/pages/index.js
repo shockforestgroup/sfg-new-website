@@ -4,19 +4,19 @@ import { graphql } from "gatsby"
 import ResidencyPage from "../components/residency-page"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import { disableBodyScroll } from 'body-scroll-lock';
+import { enableBodyScroll } from 'body-scroll-lock';
 import 'tachyons';
 
 
 const About = ({data, location}) => {
 
   React.useEffect(() => {
-    gatsbyDisableBodyScroll();
+    gatsbyEnableBodyScroll();
   }, []);
 
-  const gatsbyDisableBodyScroll = (event) => {
-    document.getElementsByTagName("html")[0].style.overflow = "hidden";
-    disableBodyScroll(document.body);
+  const gatsbyEnableBodyScroll = (event) => {
+    document.getElementsByTagName("html")[0].style= "";
+    enableBodyScroll(document.body);
   };
 
   return (

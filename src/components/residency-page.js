@@ -3,7 +3,6 @@ import { Link, navigate } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import { enableBodyScroll } from 'body-scroll-lock';
 
 import "./residency-page.css"
 
@@ -63,16 +62,6 @@ const ResidencyPage = ({ data, location }) => {
   // });
   // };
 
-  //Bodyscroll
-  React.useEffect(() => {
-    gatsbyEnableBodyScroll();
-  }, []);
-
-  const gatsbyEnableBodyScroll = (event) => {
-    enableBodyScroll(document.body);
-    document.getElementsByTagName("html")[0].style = "";
-  };
-
   return (
     <div className="residency-page">
       <SEO title="Research Location" />
@@ -87,29 +76,29 @@ const ResidencyPage = ({ data, location }) => {
         onClick={() => handleAboutClick(isExpandedAbout)}
         onKeyDown={(e) => e.key === 'Enter' && handleAboutClick(isExpandedAbout)}
         style={{ cursor: "pointer" }}
+        className="residency-page__heading"
       >
-        <p className="residency-page__heading">
-          SHOCK FOREST GROUP {isExpandedAbout && ""}
-        </p>
+        SHOCK FOREST GROUP
       </div>
-      {isExpandedAbout && <div className="residency-page__heading" dangerouslySetInnerHTML={{ __html: aboutHtml }} />}
+      {isExpandedAbout && <div className="residency-page__about">is a decentralized collective consisting of artists,</div>}
+      {isExpandedAbout && <div className="residency-page__about" dangerouslySetInnerHTML={{ __html: aboutHtml }} />}
       {/* <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} /> */}
-
-      <ul className="residency-page__list">
-        {workItems.map((el, index) => (
-          <li className="residency-page__item" key={index}>
-            <div
-              role="button"
-              tabIndex={0}
-              onClick={() => handleLinkClick(index)}
-              onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(index)}
-              style={{ cursor: "pointer" }}
-            >
-              <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
-                {String(workItems.length - index).padStart(2, '0')}. {el.title}
-              </p>
-            </div>
-            {/* <a
+      <div className="residency-page__list">
+        <ul className="residency-page__list">
+          {workItems.map((el, index) => (
+            <li className="residency-page__item" key={index}>
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => handleLinkClick(index)}
+                onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(index)}
+                style={{ cursor: "pointer" }}
+              >
+                <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
+                  {String(workItems.length - index).padStart(2, '0')}. {el.title}
+                </p>
+              </div>
+              {/* <a
               href={`/dynamic/${index}`}
               onClick={(e) => {
                 e.preventDefault();
@@ -119,7 +108,7 @@ const ResidencyPage = ({ data, location }) => {
                 {String(workItems.length - index).padStart(2, '0')}. {el.title}
               </p>
             </a> */}
-            {/* <Link
+              {/* <Link
               to={`/${index}`}
               state={{ subPageId: index }}
               onClick={(e) => {
@@ -128,11 +117,12 @@ const ResidencyPage = ({ data, location }) => {
               }}
             > */}
 
-            {/* </Link> */}
-            {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }} />}
-          </li>
-        ))}
-      </ul>
+              {/* </Link> */}
+              {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }} />}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }
