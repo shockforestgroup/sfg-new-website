@@ -27,6 +27,7 @@
   letter-spacing: var(--unnamed-character-spacing-1-2);
   color: var(--unnamed-color-ffffff);
   text-decoration: none;
+  background-color: black;
   /* overflow: scroll; */
 }
 .residency-page__heading, .residency-page__about {
