@@ -26,6 +26,10 @@ body {
   color: rgb(255, 255, 255);
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 .headline-1 {
   font-size: 26px;
   font-weight: normal;

@@ -94,9 +94,9 @@ const ResidencyPage = ({ data, location }) => {
                 onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(index)}
                 style={{ cursor: "pointer" }}
               >
-                <p className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
+                <div className="top-0 left-0 right-0 bottom-0 items-center justify-left white">
                   {String(workItems.length - index).padStart(2, '0')}. {el.title}
-                </p>
+                </div>
               </div>
               {/* <a
               href={`/dynamic/${index}`}

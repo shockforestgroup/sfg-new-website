@@ -51,7 +51,7 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-.residency-page__item div:hover p {
+.residency-page__item div:hover {
   font-weight: bold;
 }
 
@@ -88,6 +88,25 @@ a{
   text-decoration: none;
 }
 
+
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:active {
+  color: white;
+  text-decoration: none;
+}
 a:link.residency-page__item {
   color: white;
   text-decoration: none;
