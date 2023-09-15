@@ -57,6 +57,11 @@
 }
 
 
+.residency-page__item__button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
 .residency-page__item__button:hover {
   font-weight: bold;
 }
