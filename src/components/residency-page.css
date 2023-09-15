@@ -5,13 +5,13 @@
   
   /* Font/text values */
   --unnamed-font-family-helvetica-narrow-ce: 'Helvetica Narrow CE Regular';
-  --unnamed-font-size-15: 15px;
+  --unnamed-font-size-15: 16px;
   --unnamed-font-size-20: 20px;
   --unnamed-font-size-60: 24px;
   --unnamed-character-spacing-0-38: 0.38px;
   --unnamed-character-spacing-0-5: 0.5px;
   --unnamed-character-spacing-1-2: 1.2px;
-  --unnamed-line-spacing-17-5: 17.5px;
+  --unnamed-line-spacing-17-5: 22px;
   --unnamed-line-spacing-25: 25px;
   --unnamed-line-spacing-30: 30px;
   --unnamed-line-spacing-66: 66px;
@@ -34,6 +34,7 @@
   max-width: 55rem;
   margin-left: 20px;
   margin-right: 0px;
+  /* line-height: var(--unnamed-line-spacing-30); */
   /* display: inline-block; */
 }
 .residency-page__heading-button {
@@ -75,6 +76,7 @@
   font-weight: normal;
   font-size: var(--unnamed-font-size-15);
   letter-spacing: var(--unnamed-character-spacing-0-38);
+  line-height: var(--unnamed-line-spacing-17-5);
   color: var(--unnamed-color-ffffff);
   text-align: left;
 }
