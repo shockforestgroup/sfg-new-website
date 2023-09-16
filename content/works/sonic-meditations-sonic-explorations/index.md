@@ -1,12 +1,10 @@
 ---
 date: "2019"
-title: Sonic Meditations, Sonic Explorations
+title: Sonic Meditations, Sonic Explorations (Het Hem, 2019)
 author: Zaandam, The Netherlands
 project: hembrug
 coverImage: img_0084.jpg
 ---
-![](agadaqadq6gxg3vhceqnfug6bzmydjj7awyabaeaawiaa3kaa9-_aaiwba_544_1280x960.jpg)
-
 What do bodies do in an empty space?
 
 How can we empty our bodies, to fill an empty room?
@@ -28,3 +26,5 @@ The exploration progressed and we decided to think in elevation. We climbed up t
 In the Phase Transition Room, we witnessed an evolution. We gradually modulated the limits of our bodies and of the space we were inhabiting. Starting from the mouth, the sound of our breathing, the voice in its multiple mutations, we ended up leaving our personal shell to tune in with the surrounding. Music needs a contextual space to be in time with. Our experiment of conversation with the space allowed us to be actively present in it, interlacing relations with it, getting to know it through intuitive processes of synchronization and resonance. We ended up perched on the ledge like pigeons, 12 voices unified in emptiness.
 
 The sounds you can hear today walking through the Phase Transition Space are the traces of our experimentation.
+
+![](agadaqadq6gxg3vhceqnfug6bzmydjj7awyabaeaawiaa3kaa9-_aaiwba_544_1280x960.jpg)
