@@ -45,7 +45,8 @@ export const query = graphql`
       }
     }
     works: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/(works)/" } }
+      filter: { fileAbsolutePath: { regex: "/(works)/" } },
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       nodes {
         fields {
