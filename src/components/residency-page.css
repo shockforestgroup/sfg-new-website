@@ -5,9 +5,9 @@
   
   /* Font/text values */
   --unnamed-font-family-helvetica-narrow-ce: 'Helvetica Narrow CE Regular';
-  --unnamed-font-size-15: 16px;
+  --unnamed-font-size-15: 20px;
   --unnamed-font-size-20: 20px;
-  --unnamed-font-size-60: 24px;
+  --unnamed-font-size-60: 26px;
   --unnamed-character-spacing-0-38: 0.38px;
   --unnamed-character-spacing-0-5: 0.5px;
   --unnamed-character-spacing-1-2: 1.2px;
@@ -31,7 +31,7 @@
   /* overflow: scroll; */
 }
 .residency-page__heading {
-  max-width: 55rem;
+  max-width: 45rem;
   margin-left: 20px;
   margin-right: 0px;
   /* line-height: var(--unnamed-line-spacing-30); */
@@ -69,7 +69,7 @@
 
 
 .residency-page__content {
-  max-width: 55rem;
+  max-width: 45rem;
   margin-top: 10px;
   left: 0;
   font-family: var(--unnamed-font-family-helvetica-narrow-ce);
