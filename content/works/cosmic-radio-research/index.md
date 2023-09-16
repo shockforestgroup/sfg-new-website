@@ -1,6 +1,6 @@
 ---
-date: 2010-01-01
-title: COSMIC RADIO RESEARCH
+date: 2023-04-14
+title: Cosmic Radio (research and film at STRP festival, 2023)
 author: Eindhoven, The Netherlands
 project: cosmic radio
 coverImage: sfg_cosmic_radio.jpg
