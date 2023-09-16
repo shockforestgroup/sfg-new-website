@@ -13,7 +13,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { name: date, label: Date, widget: date, default: "", format: YYYY }
+      - { name: date, label: Date, widget: date, default: "", format: YYYY-MM-DD }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       # - { name: author, label: Author }
@@ -29,7 +29,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { name: date, label: Date, widget: date, default: "", format: YYYY }
+      - { name: date, label: Date, widget: date, default: "", format: YYYY-MM-DD }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       # - { name: author, label: Author }
