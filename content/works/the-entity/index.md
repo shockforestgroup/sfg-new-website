@@ -1,6 +1,6 @@
 ---
-date: "2019"
-title: The Entity
+date: 2019-11-01
+title: The Entity (Het Hem, 2019)
 author: " Zaandam, The Netherlands"
 project: hembrug
 coverImage: agadbaadobaxg-sa0vpg_dww0g-iddiaobsabaeaawiaa3kaa_hqbaabfgq_3830_1280x951.jpg
