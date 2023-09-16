@@ -1,6 +1,6 @@
 ---
-date: "2023"
-title: COSMIC RADIO at radio frequencies
+date: 2023-04-15
+title: Cosmic Radio (radio program at STRP festival, 2023)
 author: Eindhoven, The Netherlands
 project: cosmic radio
 coverImage: boudewijnbollmann_strp2023_12april2023_opening_lores-52.jpg
