@@ -1,14 +1,10 @@
 ---
-date: "2019"
-title: Kneading Stories
+date: 2019-05-11
+title: Kneading Stories (Het Hem, 2019)
 author: Zaandam, The Netherlands
 project: hembrug
 coverImage: img_0080.jpg
 ---
-
-
-![](img_20191214_130625.jpg)
-
 The word bread comes from Old English and means fragment, bit, crumb. It also means to extend, to spread, to stretch out. To rise and grow. As when people come together and act collectively, the coming together of flour and water particles creates something that is much more than the sum of its parts.
 
 In Romance languages the word for bread (pane, pan, pain) comes from the latin word panem. Panem bears the root pa, which means to nourish. Pa also means to protect, to sustain, and it is the same root of the word pater, father. The etymology of bread seems to speak to us about origin and growth in the warmth of a familiar, safe environment.
@@ -16,8 +12,6 @@ In Romance languages the word for bread (pane, pan, pain) comes from the latin w
 The word company comes from latin cum-panis, which means with-bread. Bread underlies the idea of togetherness, of solidarity. The word compassion also carries the root pa. Compassion literally means to suffer-with. It means to be deeply aware of the suffering of another. This place, as you might know, is a former ammunition factory. The products made here were sold all around the world to sustain conflicts, to oppress people, to hinder revolutions. Even though we might not readily see the traces of the suffering this place caused elsewhere, it does not mean such violence did not take place. During our months spent here researching about the history of this terrain, we have often faced questions on how to enact a process of collective recognition, how to create empathy towards both the visible and the invisible, the here and the elsewhere.
 
 The abundance or scarcity of bread has always been a parameter to measure the wellbeing of a country. During war times, bread has often been rationed. The possibility of buying flour or bread often becoming the greatest difficulty for the population. It seems that the circulation of bread is inversely proportional to the circulation of weapons. The relationship between bread and war is the one between life and death. Between togetherness and division. Between bounty and deprivation.
-
-![](img_0079.jpg)
 
 Both war and bread are related to the term safety. What does it mean to be safe? We have asked ourselves this question a lot in the past months. Protected under the canopy of this new art institution, we have tried to acknowledge our role of privilege: it is safe to be here. Neoliberal wars are fought in the name of safety. The deployment of “defence” forces is justified by the promise of a safe national space. Safety is guaranteed through the construction of barriers. Through exclusion. Those inside are protected at the expense of those outside. Security systems installed in private homes create a shield against possible intruders. In these terms, safety is egoistic, fearful, privatised.
 
@@ -38,3 +32,8 @@ How can we use this space with respect to the past?
 How can we look at the future, carrying this responsibility, together?
 
 What does it mean for this place to be a home for culture?
+
+
+![](img_20191214_130625.jpg)
+
+![](img_0079.jpg)

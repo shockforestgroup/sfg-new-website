@@ -1,10 +1,12 @@
 ---
-date: "2019"
-title: Digital Archive
+date: 2019-01-09
+title: Digital Archive (Het Hem, 2019)
 author: Zaandam
 project: hembrug
 coverImage: screenshot_2023-09-04_at_13.54.45.jpg
 ---
-![](screenshot_2023-09-04_at_13.54.45.jpg "Digital Archive")
+We kept a digital archive of our research during a 4-month residency at Het Hem, Zaandam. Content in the archive comes from a Telegram bot in our group chat that automatically uploads marked content to the archive. 
 
-Visit the digital archive [here](https://archive.shockforest.group/).
+Visit the archive [here](https://archive.shockforest.group/).
+
+![](screenshot_2023-09-04_at_13.54.45.jpg "Digital Archive")
