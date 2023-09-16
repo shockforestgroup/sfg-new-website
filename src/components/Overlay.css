@@ -19,7 +19,6 @@ a:active {
 } 
 
 .overlay {
-  border: 2px solid black;
   position: absolute;
   z-index: 1;
   /* top: 125px; */
