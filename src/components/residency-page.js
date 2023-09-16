@@ -65,11 +65,6 @@ const ResidencyPage = ({ data, location }) => {
   return (
     <div className="residency-page">
       <SEO title="Research Location" />
-      {/* <Link>
-        <div className="residency-page__heading">
-          SHOCK FOREST GROUP
-        </div>
-      </Link> */}
       <div
         className="residency-page__heading"
       >
@@ -83,9 +78,7 @@ const ResidencyPage = ({ data, location }) => {
         >
           SHOCK FOREST GROUP
         </div>
-        {/* {isExpandedAbout && <div className="residency-page__about">is a decentralized collective consisting of artists,</div>} */}
         {isExpandedAbout && <div className="residency-page__about" dangerouslySetInnerHTML={{ __html: aboutHtml }} />}
-        {/* <div className="residency-page__item" dangerouslySetInnerHTML={{ __html: about.html }} /> */}
       </div>
       <div className="residency-page__list">
         <ul className="residency-page__list">
