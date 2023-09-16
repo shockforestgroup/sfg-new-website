@@ -38,8 +38,13 @@
   /* display: inline-block; */
 }
 .residency-page__heading-button {
+  margin-right: 7px;
+}
+
+.residency-page__heading-button-expanded {
   float:left;
   margin-right: 7px;
+  font-weight: bold;
 }
 
 .residency-page__heading-button:hover {
@@ -94,27 +99,27 @@
 
 a{
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
 
 a:link {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:visited {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
 }
 a:active {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:link.residency-page__item {
   color: white;

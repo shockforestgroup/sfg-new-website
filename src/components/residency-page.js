@@ -74,7 +74,7 @@ const ResidencyPage = ({ data, location }) => {
           onClick={() => handleAboutClick(isExpandedAbout)}
           onKeyDown={(e) => e.key === 'Enter' && handleAboutClick(isExpandedAbout)}
           style={{ cursor: "pointer" }}
-          className={isExpandedAbout ? "residency-page__heading-button" : ""}
+          className={isExpandedAbout ? "residency-page__heading-button-expanded" : "residency-page__heading-button"}
         >
           SHOCK FOREST GROUP
         </div>
