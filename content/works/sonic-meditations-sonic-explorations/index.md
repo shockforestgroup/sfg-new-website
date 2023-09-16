@@ -1,5 +1,5 @@
 ---
-date: "2019"
+date: 2019-10-10
 title: Sonic Meditations, Sonic Explorations (Het Hem, 2019)
 author: Zaandam, The Netherlands
 project: hembrug
