@@ -22,12 +22,16 @@ a:active {
   border: 2px solid black;
   position: absolute;
   z-index: 1;
-  top: 125px;
+  /* top: 125px; */
   /* left: 10px; */
-  width: 100vw;
-  height: calc(100vh - 125px);
+  width: 97vw;
+  height: 100vh;
   overflow: hidden;
   text-transform: lowercase;
+  background-color: rgb(0, 0, 0);
+  /* border: 1px solid white; */
+  /* box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.408); */
+  opacity: 0.9;
 }
 
 .overlay__inner {
@@ -45,10 +49,6 @@ a:active {
 }
 
 .overlay__inner__transp-layer {
-  background-color: rgb(0, 0, 0);
-  /* border: 1px solid white; */
-  /* box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.408); */
-  opacity: 0.9;
   content: "";
   position: absolute;
   top: 0;
@@ -66,9 +66,8 @@ a:active {
 
 @media (min-width: 800px) {
   .overlay {
-    top: 45px;
-    width: 100vw;
-    height: calc(100vh - 45px);
+    width: 97vw;
+    height: 97vh;
   }
   .overlay__close {
     right: 31px;

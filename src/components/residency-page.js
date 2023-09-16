@@ -6,7 +6,7 @@ import SEO from "../components/Seo"
 
 import "./residency-page.css"
 
-const ResidencyPage = ({ data, location }) => {
+const ResidencyPage = ({ data, location, children }) => {
   const aboutHtml = data?.about?.html
   const essayItems = data?.essays?.nodes.map(({ frontmatter, fields }) => ({
     title: frontmatter.title,
@@ -65,6 +65,7 @@ const ResidencyPage = ({ data, location }) => {
   return (
     <div className="residency-page">
       <SEO title="Research Location" />
+      {children}
       <div
         className="residency-page__heading"
       >
