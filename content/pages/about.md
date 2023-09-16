@@ -37,4 +37,4 @@ involves opportunities for community engagement, public performance, collective 
 Shock Forest Group consists of seven researchers: Katya Abazajian, Sheryn Akiki, Axel Coumans, Susanna Gonzo, Nicolas Jaar, Daria Kiseleva and Jelger Kroese.
 
 
-[Contact us here](mailto:info@shockforest.group)
+Contact us [here](mailto:info@shockforest.group)
