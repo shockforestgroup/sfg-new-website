@@ -1,15 +1,11 @@
 ---
-date: 2023-08-25T14:52:10.424Z
-title: A Monument to What?
+date: "2019"
+title: A Monument to What? (Het Hem, 2019)
 author: Zaandam, The Netherlands
 project: hembrug
 coverImage: img_0071.jpg
 ---
-![](img_0071.jpg)
-
-Message from the Shock Forest Group:
-
-We are a group of 15 researchers who held a 4-month long residency at het Hem gallery in Zaandam. We researched the history of Hembrug ex-military terrain and its Shockbos (Shock Forest) through a process of open research and collective experimentation. Our relationship with the Forest became central to our process. During our residency, we visited the forest several times, trying to connect to the stories that are still kept among its ruins. The two tree trunks you can see in the grassy patch outside the café are the last two trees of this forest.
+During a 4-month long residency at het Hem gallery in Zaandam, we researched the history of Hembrug ex-military terrain and its Shockbos (Shock Forest) through a process of open research and collective experimentation. Our relationship with the Forest became central to our process. During our residency, we visited the forest several times, trying to connect to the stories that are still kept among its ruins. The two tree trunks you can see in the grassy patch outside the café are the last two trees of this forest.
 
 The Schokbos (Shock Forest) was planted in 1902 in the military terrain of Hembrug. It was mapped out according to a detailed planting scheme with the aim of testing projectiles, grenades and bombs produced in the neighbouring ammunition factory, Artillerie Inrichtingen (later Eurometaal). These weapons were shipped to bloody conflicts around the world in Israel, Turkey, Iran, Guatemala, Mozambique, South Africa during apartheid and dozens more. The Shock Forest acted as a protective shield for the factory in case of explosions and created a sonic and visual camouflage to its activities. During the most active years of the factory, workers were often sent to the forest to dispose of highly toxic materials. Unexploded bombs and other testing equipment were left buried under the clay soil after the closure of the factory in 2001, when the military terrain was abandoned.
 
@@ -45,4 +41,5 @@ And yet, against all odds, these trees are now the sources of new life, helping 
 
 Thank you Judith and Bas for your kind welcoming of the trees. They couldn’t have found a better home.
 
+![](img_0071.jpg)
 ![](img_0070.jpg)
