@@ -1,6 +1,6 @@
 ---
-date: "2019"
-title: Shock Forest Score
+date: 2019-10-31
+title: Shock Forest Score (Het Hem, 2019)
 author: Zaandam, The Netherlands
 project: hembrug
 coverImage: screenshot_2023-09-01_at_11.41.03-1.jpg
