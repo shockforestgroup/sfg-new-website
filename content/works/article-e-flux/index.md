@@ -1,11 +1,10 @@
 ---
-date: "2021"
-title: "'This forest was built to be bombed' publication You Can't Trust Music
-  (e-flux)"
+date: "2022"
+title: This Forest Was Built to Be Bombed (e-flux, 2022)
 author: Zaandam, The Netherlands
 project: hembrug
 coverImage: screenshot_20191220-152613.jpg
 ---
-![](screenshot_20191220-152613.jpg)
+An essay by Shock Forest Group entitled "This Forest Was Built To Be Bombed", is featured on a new digital exhibition and research project curated by Xenia Benivolski for e-flux entitled "[You Can’t Trust Music](https://yctm.e-flux.com/sonic-boom)".
 
-https://yctm.e-flux.com/sonic-boom
+![](screenshot_20191220-152613.jpg)
