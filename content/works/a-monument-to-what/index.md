@@ -41,7 +41,4 @@ And yet, against all odds, these trees are now the sources of new life, helping 
 
 Thank you Judith and Bas for your kind welcoming of the trees. They couldn’t have found a better home.
 
-![](img_0071.jpg)
-![](img_0070.jpg)
-
 ![](img_3173.jpg)
