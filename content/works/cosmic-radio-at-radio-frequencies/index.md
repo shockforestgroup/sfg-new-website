@@ -5,4 +5,4 @@ author: Eindhoven, The Netherlands
 project: cosmic radio
 coverImage: boudewijnbollmann_strp2023_12april2023_opening_lores-52.jpg
 ---
-Listen to the broadcast [here](https://soundcloud.com/strp-festival/talk-shock-forest-group?ref=clipboard&p=i&c=0&si=1DEC993E1B8B4270814557A9E7920339&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+The [radio show](https://soundcloud.com/strp-festival/talk-shock-forest-group?ref=clipboard&p=i&c=0&si=1DEC993E1B8B4270814557A9E7920339&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing) was recorded from the live radio station broadcast during STRP Festival 2023.
