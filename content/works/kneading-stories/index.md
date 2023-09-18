@@ -33,7 +33,6 @@ How can we look at the future, carrying this responsibility, together?
 
 What does it mean for this place to be a home for culture?
 
+![](img_2709.jpg)
 
 ![](img_20191214_130625.jpg)
-
-![](img_0079.jpg)
