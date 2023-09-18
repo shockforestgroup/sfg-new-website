@@ -13,4 +13,6 @@ This archive was compiled in collaboration with Erik Schaap and the Zaanstad Arc
 
 ![](img_3176.jpg)
 
+![](img_0076.jpg)
+
 ![](img_20191121_101706.jpg)
