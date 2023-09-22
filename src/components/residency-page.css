@@ -81,6 +81,10 @@
   line-height: var(--unnamed-line-spacing-17-5);
   color: var(--unnamed-color-ffffff);
   text-align: left;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .residency-page__content .gatsby-resp-image-wrapper {
@@ -98,8 +102,6 @@ a{
   color: white;
   text-decoration: underline;
 }
-
-
 
 a:link {
   color: white;

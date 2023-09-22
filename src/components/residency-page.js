@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { Link, navigate } from "gatsby"
 
 import Layout from "../components/Layout"
@@ -29,6 +29,15 @@ const ResidencyPage = ({ data, location, children }) => {
   const [expandedId, setExpandedId] = useState(null);
   //handling expand collapse and url setting
   const [isExpandedAbout, setIsExpandedAbout] = useState(false);
+
+  const [maxHeight, setMaxHeight] = useState("0px");
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setMaxHeight(`${contentRef.current.scrollHeight}px`);
+    }
+  }, [workItems]);
 
   useEffect(() => {
     if (location.state && location.state.subPageId) {
@@ -121,7 +130,13 @@ const ResidencyPage = ({ data, location, children }) => {
             > */}
 
               {/* </Link> */}
-              {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }} />}
+              <div
+                ref={contentRef}
+                style={{ maxHeight: expandedId === index ? maxHeight : "0px" }}
+                className="residency-page__content"
+                dangerouslySetInnerHTML={{ __html: el.html }}
+              />
+              {/* {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }} />} */}
             </li>
           ))}
         </ul>
