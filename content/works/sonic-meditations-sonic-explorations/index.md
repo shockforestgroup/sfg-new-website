@@ -5,9 +5,7 @@ author: Zaandam, The Netherlands
 project: hembrug
 coverImage: img_0084.jpg
 ---
-What do bodies do in an empty space?
-
-How can we empty our bodies, to fill an empty room?
+What do bodies do in an empty space? How can we empty our bodies, to fill an empty room?
 
 This week the artist, researcher and curator Rolando Hernández joined our group meetings in Het Hem. His work experiments with different sound practices which include listening, tuning, resonating within and without the body. Our conversations with him lead him to introduce us to the Sonic Meditations by musician, theorist and composer Pauline Oliveros (1932-2016), which strongly inspires his approach.
 
