@@ -99,8 +99,6 @@ a{
   text-decoration: underline;
 }
 
-
-
 a:link {
   color: white;
   text-decoration: underline;
@@ -110,9 +108,8 @@ a:visited {
   text-decoration: underline;
 }
 a:hover {
-  color: white;
+  color: rgb(213, 213, 213);
   text-decoration: underline;
-  font-weight: bold;
 }
 a:active {
   color: white;

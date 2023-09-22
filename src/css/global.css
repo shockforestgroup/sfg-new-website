@@ -30,6 +30,10 @@ p {
   margin-bottom: 1em;
 }
 
+a {
+  color: white;
+}
+
 .headline-1 {
   font-size: 26px;
   font-weight: normal;
