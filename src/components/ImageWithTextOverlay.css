@@ -1,0 +1,24 @@
+.image-container {
+    position: relative;
+    display: block;
+    height: "100vh";
+    width: "auto";
+
+    /* Keeps the container snug to the image */
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* Optional: for better text visibility */
+    padding: 10px;
+    /* Optional: for some spacing around the text */
+}

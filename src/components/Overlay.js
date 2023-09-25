@@ -11,17 +11,17 @@ export default ({ children, onClose }) => {
       <div className="overlay__inner">
         <div className="overlay__inner__content">
           <div className="overlay__inner__transp-layer"></div>
-          <div style={{ marginBottom: "105px" }}>
-          </div>
           {children}
-          <span className="overlay__close">
-            <Close
-              onClick={() => {
-                onClose ? onClose() : navigate("/")
-              }}
-            />
-          </span>
+          <div style={{ marginBottom: "10px" }}>
+          </div>
         </div>
+        <span className="overlay__close">
+          <Close
+            onClick={() => {
+              onClose ? onClose() : navigate("/")
+            }}
+          />
+        </span>
       </div>
     </div>
   )

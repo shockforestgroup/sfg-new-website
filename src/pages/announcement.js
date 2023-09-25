@@ -3,12 +3,25 @@ import { graphql } from "gatsby"
 
 import ResidencyPageWithOverlay from "../components/residency-pageWithOverlay"
 import SEO from "../components/Seo"
+import ImageWithTextOverlay from "../components/ImageWithTextOverlay"
 import Overlay from "../components/Overlay"
 import { enableBodyScroll } from 'body-scroll-lock';
 import 'tachyons';
 
 
 const Announcement = ({ data, location }) => {
+
+  let text = ["SIGN UP",
+    <br />,
+    "for",
+    <br />,
+    "COSMIC",
+    <br />,
+    "RADIO",
+    <br />,
+    "workshop",
+    <br />,
+    "with SFG"];
 
   React.useEffect(() => {
     gatsbyEnableBodyScroll();
@@ -25,6 +38,13 @@ const Announcement = ({ data, location }) => {
       location={location}
     >
       <SEO title="Announcement" />
+      <ImageWithTextOverlay
+        src="/assets/cosmicRadioWorkshopLandscapeNoText.jpg"
+        alt="My Image"
+        overlayText={text}
+      />
+
+
       Non esse alias id dolor sequi. Enim officiis aperiam consequatur. Ex numquam nihil reprehenderit. Quibusdam illum accusantium debitis ea dignissimos omnis magnam. Quia dolore neque facere et. Iure tenetur beatae facilis qui facilis quo neque.
 
       Esse possimus est labore reiciendis earum et nobis dicta. Consequatur et eligendi ratione. Et voluptas harum ut officiis consequatur. Assumenda incidunt quod recusandae nemo impedit sed quasi sit. Quae et odit repellendus libero. Est sed rerum quidem minus qui laboriosam mollitia.
@@ -64,13 +84,7 @@ export const query = graphql`
           date
           author
           project
-          coverImage {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          coverImage
         }
       }
     }

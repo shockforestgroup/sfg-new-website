@@ -76,6 +76,6 @@ a:active {
 
 @media (min-width: 1200px) {
   .overlay__inner__content {
-    padding: 20px 60px;
+    padding: 0px 60px;
   }
 }

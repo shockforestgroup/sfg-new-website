@@ -50,13 +50,7 @@ export const query = graphql`
           date
           author
           project
-          coverImage {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          coverImage 
         }
       }
     }
