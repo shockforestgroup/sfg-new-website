@@ -13,11 +13,9 @@ collections:
     editor:
       preview: false
     fields:
-      - { name: date, label: Date, widget: date, default: "", format: YYYY-MM-DD }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       # - { name: author, label: Author }
-      - { name: project, label: Project, required: false, widget: select, options: ["hembrug", "cosmic radio"]}
       # - { name: coverImage, label: Cover Image, widget: image, allow_multiple: false }
       # - { name: file, label: File, widget: file, allow_multiple: true }
   - name: work
@@ -78,3 +76,9 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
               - { label: Photo, name: photo, widget: image }
+      - label: "Announcement Page"
+        name: announcement
+        file: content/pages/announcement.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
