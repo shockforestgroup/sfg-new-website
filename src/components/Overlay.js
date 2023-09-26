@@ -17,11 +17,10 @@ export default ({ children, onClose, imgSrc, imgOverlayText, imgAlt }) => {
             alt={imgAlt}
           />
         </div>
+        <div style={{ marginBottom: "50px" }} />
         <div className="overlay__inner__content">
-          <div className="overlay__inner__transp-layer"></div>
+          <div className="overlay__inner__transp-layer" />
           {children}
-          <div style={{ marginBottom: "10px" }}>
-          </div>
         </div>
         <span className="overlay__close">
           <Close
