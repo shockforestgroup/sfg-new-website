@@ -1,21 +1,21 @@
 /* unvisited link */
 a:link {
-  color: rgb(0, 174, 255);
+  color: white;
 }
 
 /* visited link */
 a:visited {
-  color: rgb(0, 174, 255);
+  color: white;
 }
 
 /* mouse over link */
 a:hover {
-  color: rgb(81, 200, 255);
+  color: rgb(213, 213, 213);
 }
 
 /* selected link */
 a:active {
-  color: rgb(151, 222, 255);
+  color: white;
 } 
 
 .overlay {
