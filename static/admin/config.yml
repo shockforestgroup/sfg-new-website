@@ -76,3 +76,9 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Position, name: position, widget: string }
               - { label: Photo, name: photo, widget: image }
+      - label: "Announcement Page"
+        name: announcement
+        file: content/pages/announcement.md
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
