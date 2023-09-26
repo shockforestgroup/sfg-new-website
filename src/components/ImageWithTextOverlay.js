@@ -6,7 +6,14 @@ import './ImageWithTextOverlay.css';
 
 const ImageWithTextOverlay = ({ src, alt, overlayText }) => {
     return (
-        <div className="image-container" >
+        <div className="image-container"
+            style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh', // This will make sure the container takes the full height of the viewport
+                overflow: 'hidden' // This will hide any part of the image that overflows the container
+            }}>
             <img
                 src={src}
                 alt={alt}

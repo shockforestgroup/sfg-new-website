@@ -36,24 +36,18 @@ const Announcement = ({ data, location }) => {
     <ResidencyPageWithOverlay
       data={data}
       location={location}
+      imgSrc={"/assets/cosmicRadioWorkshopLandscapeNoText.jpg"}
+      imgOverlayText={text}
+      imgAlt={"SFG announcement"}
     >
       <SEO title="Announcement" />
-      <ImageWithTextOverlay
-        src="/assets/cosmicRadioWorkshopLandscapeNoText.jpg"
+      {/* <ImageWithTextOverlay
+        src=
         alt="My Image"
         overlayText={text}
-      />
+      /> */}
 
-
-      Non esse alias id dolor sequi. Enim officiis aperiam consequatur. Ex numquam nihil reprehenderit. Quibusdam illum accusantium debitis ea dignissimos omnis magnam. Quia dolore neque facere et. Iure tenetur beatae facilis qui facilis quo neque.
-
-      Esse possimus est labore reiciendis earum et nobis dicta. Consequatur et eligendi ratione. Et voluptas harum ut officiis consequatur. Assumenda incidunt quod recusandae nemo impedit sed quasi sit. Quae et odit repellendus libero. Est sed rerum quidem minus qui laboriosam mollitia.
-
-      Consectetur aut aperiam repellat voluptatum sed velit nesciunt. Aut est possimus quia. Error qui et placeat sed id id nam. Voluptatem voluptatem velit odio possimus. Dolor laboriosam fugiat et est adipisci dolorem necessitatibus et. Omnis ut ipsa velit harum eaque exercitationem.
-
-      Perferendis voluptatum praesentium doloremque qui dicta. Soluta quod sunt temporibus eos et qui quae. Dolor tempore veritatis iure velit enim. Dolore dolore officia est. Quia ab recusandae reiciendis.
-
-      Nihil quo qui necessitatibus est aut quia maiores. Officia iusto harum ex. Minus temporibus porro porro qui nihil non rerum quis. Ad molestias eos quia omnis molestiae sunt id necessitatibus.
+      {<div dangerouslySetInnerHTML={{ __html: data?.announcement?.html }} />}   
 
     </ResidencyPageWithOverlay>
   )
@@ -64,6 +58,12 @@ export default Announcement
 export const query = graphql`
   query PageQueryAllActivities2 {
     about: markdownRemark(fields: { slug: { eq: "/pages/about/" } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+    announcement: markdownRemark(fields: { slug: { eq: "/pages/announcement/" } }) {
       html
       frontmatter {
         title

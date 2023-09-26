@@ -6,13 +6,17 @@ import Overlay from "./Overlay"
 
 import "./residency-page.css"
 
-const ResidencyPageWithOverlay = ({ data, location, children }) => {
+const ResidencyPageWithOverlay = ({ data, location, children, imgSrc, imgOverlayText, imgAlt  }) => {
   return (
     <ResidencyPage
       data={data}
       location={location}
     >
-      <Overlay>
+      <Overlay
+        imgSrc={imgSrc} 
+        imgOverlayText={imgOverlayText}
+        imgAlt={imgAlt} 
+      >
         <main>{children}</main>
       </Overlay>
     </ResidencyPage>
