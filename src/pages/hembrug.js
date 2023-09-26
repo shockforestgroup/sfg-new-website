@@ -50,7 +50,6 @@ export const query = graphql`
           date
           author
           project
-          coverImage
         }
       }
     }

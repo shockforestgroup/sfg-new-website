@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link, navigate } from "gatsby"
 
 import ResidencyPage from "./residency-page"
@@ -12,6 +12,7 @@ const ResidencyPageWithOverlay = ({ data, location, children, imgSrc, imgOverlay
       data={data}
       location={location}
     >
+      {}
       <Overlay
         imgSrc={imgSrc} 
         imgOverlayText={imgOverlayText}

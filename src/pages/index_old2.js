@@ -1,64 +1,38 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import ResidencyPageWithOverlay from "../components/residency-pageWithOverlay"
+import ResidencyPage from "../components/residency-page"
 import SEO from "../components/Seo"
-import ImageWithTextOverlay from "../components/ImageWithTextOverlay"
-import Overlay from "../components/Overlay"
 import { enableBodyScroll } from 'body-scroll-lock';
 import 'tachyons';
 
 
-const Announcement = ({ data, location }) => {
-
-  let text = ["SIGN UP",
-    <br />,
-    "for",
-    <br />,
-    "COSMIC",
-    <br />,
-    "RADIO",
-    <br />,
-    "workshop",
-    <br />,
-    "with SFG"];
+const About = ({data, location}) => {
 
   React.useEffect(() => {
     gatsbyEnableBodyScroll();
   }, []);
 
   const gatsbyEnableBodyScroll = (event) => {
-    document.getElementsByTagName("html")[0].style = "";
+    document.getElementsByTagName("html")[0].style= "";
     enableBodyScroll(document.body);
   };
 
   return (
-    <ResidencyPageWithOverlay
+    <ResidencyPage
       data={data}
       location={location}
-      imgSrc={"/assets/cosmicRadioWorkshopLandscapeNoText.jpg"}
-      imgOverlayText={text}
-      imgAlt={"SFG announcement"}
     >
       <SEO title="Home" />
-
-      {<div dangerouslySetInnerHTML={{ __html: data?.announcement?.html }} />}   
-
-    </ResidencyPageWithOverlay>
+    </ResidencyPage>
   )
 }
 
-export default Announcement
+export default About
 
 export const query = graphql`
-  query PageQueryAllActivities2 {
+  query PageQueryAllActivities {
     about: markdownRemark(fields: { slug: { eq: "/pages/about/" } }) {
-      html
-      frontmatter {
-        title
-      }
-    }
-    announcement: markdownRemark(fields: { slug: { eq: "/pages/announcement/" } }) {
       html
       frontmatter {
         title

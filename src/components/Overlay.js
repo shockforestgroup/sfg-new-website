@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { navigate } from "gatsby"
 
 import Close from "./Close"
@@ -7,6 +7,21 @@ import ImageWithTextOverlay from "./ImageWithTextOverlay"
 import "./Overlay.css"
 
 export default ({ children, onClose, imgSrc, imgOverlayText, imgAlt }) => {
+  // Define a state variable to manage the visibility of the component
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleClose = () => {
+    if (onClose) {
+      onClose();
+    } else {
+      // Set the visibility state to false to hide the component
+      setIsVisible(false);
+    }
+  };
+
+  // Return early with null if the component should be hidden
+  if (!isVisible) return null;
+
   return (
     <div className="overlay">
       <div className="overlay__inner__transp-layer" />
@@ -24,9 +39,7 @@ export default ({ children, onClose, imgSrc, imgOverlayText, imgAlt }) => {
         </div>
         <span className="overlay__close">
           <Close
-            onClick={() => {
-              onClose ? onClose() : navigate("/")
-            }}
+            onClick={handleClose}
           />
         </span>
       </div>
