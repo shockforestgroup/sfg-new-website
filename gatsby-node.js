@@ -4,15 +4,6 @@ const { createFilePath } = require("gatsby-source-filesystem")
 const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 exports.createPages = ({ actions, graphql }) => {
-  // const { createRedirect } = actions;
-
-  // createRedirect({
-  //   fromPath: '/',
-  //   toPath: '/announcement',
-  //   redirectInBrowser: true,
-  //   isPermanent: true,
-  // });
-
   const { createPage } = actions
   return graphql(`
     {
