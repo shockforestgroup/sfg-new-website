@@ -5,6 +5,12 @@ author: Zaandam, The Netherlands
 project: hembrug
 coverImage: img_0080.jpg
 ---
+During our time at Het Hem, we organised a communal meeting inviting local residents and bread makers. Our aim for the gathering was to provide a space in which we could all feel comfortable, in which we can all feel free to talk, free to move. As the smell of bread pervades the space, challenges its borders, a universal language may speak to us about home, hospitality and generosity. We thought that the event was not only about bread and did not end at that moment. We saw bread as a catalyst to bring people together. How we can create a common space as a seed for future events and collaborations. The question we hoped to start with in today’s conversation was: What does it mean for this place to be a home for culture?
+
+Bread is made of visible and invisible fragments. Not only flour and water, but also smells, temperatures, memories, atmospheres. Bread can be a place in which we meet with others. By making bread together, looking at each other, we exchange stories, ideas, energies. By kneading our stories together, we are endowed with a new, collective responsibility. The process of making and eating bread is a process of healing: by chewing we process history and traumas. By sharing this space, eating this food, we get involved into a collective effort to digest history. A collective digestion of the past means internalisation and understanding rather than forgetfulness.
+
+•••
+
 The word bread comes from Old English and means fragment, bit, crumb. It also means to extend, to spread, to stretch out. To rise and grow. As when people come together and act collectively, the coming together of flour and water particles creates something that is much more than the sum of its parts.
 
 In Romance languages the word for bread (pane, pan, pain) comes from the latin word panem. Panem bears the root pa, which means to nourish. Pa also means to protect, to sustain, and it is the same root of the word pater, father. The etymology of bread seems to speak to us about origin and growth in the warmth of a familiar, safe environment.
@@ -24,14 +30,8 @@ Making bread collectively, as we propose today, is the opposite of this process.
 The process of making and eating bread is a process of healing: by chewing we process history and traumas. History and traumas enter us. They become ours. By sharing this space, eating this food, we get involved into a collective effort to digest history. It is primarily through the stomach and the body- not only the mind- that we deal with past mistakes. A collective digestion of the past means internalisation and understanding rather than forgetfulness.
 
 Our aim for today’s gathering is to provide a space in which we can all feel comfortable, in which we can all feel free to talk, free to move. As the smell of bread pervades the space, challenges its borders, a universal language may speak to us about home, hospitality and generosity. Despite the hostility of this architecture, we are all here, together.
+What we are doing here today is not only about bread and doesn’t end now. Bread can be the catalyst that reminds us how people can come together and cooperate. How we can create a common space. We hope this event is a seed for future events and collaborations. In light of this, we would like to ask the following questions: How can we use this space with respect to the past? How can we look at the future, carrying this responsibility, together? What does it mean for this place to be a home for culture?
 
-What we are doing here today is not only about bread and doesn’t end now. Bread can be the catalyst that reminds us how people can come together and cooperate. How we can create a common space. We hope this event is a seed for future events and collaborations. In light of this, we would like to ask the following questions:
-
-How can we use this space with respect to the past?
-
-How can we look at the future, carrying this responsibility, together?
-
-What does it mean for this place to be a home for culture?
 
 ![](img_2709.jpg)
 

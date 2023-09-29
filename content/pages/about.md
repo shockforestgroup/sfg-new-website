@@ -5,6 +5,7 @@ is a decentralized collective consisting of artists, activists, ecologists, musi
 involves opportunities for community engagement, public performance, collective improvisation, and other forms of experiments in radical presence. 
 
 
-Shock Forest Group consists of seven researchers: Katya Abazajian, Sheryn Akiki, Axel Coumans, Susanna Gonzo, Nicolas Jaar, Daria Kiseleva and Jelger Kroese.
+Shock Forest Group consists of seven active members: Katya Abazajian, Sheryn Akiki, Axel Coumans, Susanna Gonzo, Nicolas Jaar, Daria Kiseleva and Jelger Kroese.
+
 
 Contact us [here](mailto:info@shockforest.group)
