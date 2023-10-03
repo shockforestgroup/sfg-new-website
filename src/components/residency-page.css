@@ -20,7 +20,6 @@
 
 .residency-page {
   width: calc(100vw - 30px);
-  height: 100vh;
   margin: 15px;
   font-family: var(--unnamed-font-family-helvetica-narrow-ce);
   font-weight: normal;
