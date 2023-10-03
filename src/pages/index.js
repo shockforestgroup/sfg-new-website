@@ -21,7 +21,9 @@ const Announcement = ({ data, location }) => {
     <br />,
     "workshop",
     <br />,
-    "with SFG"];
+    "with SFG",
+    <br />,
+    "↓"];
 
   React.useEffect(() => {
     gatsbyEnableBodyScroll();
