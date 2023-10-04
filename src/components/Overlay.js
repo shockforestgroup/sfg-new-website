@@ -6,7 +6,7 @@ import ImageWithTextOverlay from "./ImageWithTextOverlay"
 
 import "./Overlay.css"
 
-export default ({ children, onClose, imgSrc, imgOverlayText, imgAlt }) => {
+export default ({ children, onClose, imgLandscapeSrc, imgPortraitSrc,  imgOverlayText, imgAlt }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isCloseVisible, setIsCloseVisible] = useState(false); // State for Close visibility
 
@@ -35,7 +35,8 @@ export default ({ children, onClose, imgSrc, imgOverlayText, imgAlt }) => {
       <div className="overlay__inner">
         <div>
           <ImageWithTextOverlay
-            src={imgSrc}
+            landscapeSrc={imgLandscapeSrc}
+            portraitSrc={imgPortraitSrc}
             overlayText={imgOverlayText}
             alt={imgAlt}
           />

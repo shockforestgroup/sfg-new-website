@@ -38,7 +38,8 @@ const Announcement = ({ data, location }) => {
     <ResidencyPageWithOverlay
       data={data}
       location={location}
-      imgSrc={"/assets/DrawingLandscapeNoBackground-cosmicRadio.svg"}
+      imgLandscapeSrc={"/assets/DrawingLandscapeNoBackground-cosmicRadio.svg"}
+      imgPortraitSrc={"/assets/DrawingPortraitNoBackground-cosmicRadio.svg"}
       imgOverlayText={text}
       imgAlt={"SFG announcement"}
     >
