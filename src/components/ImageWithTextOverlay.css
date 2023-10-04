@@ -5,15 +5,21 @@
 
 .overlay-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     text-align: center;
     /* background-color: rgba(0, 0, 0, 0.5); */
     /* Optional: for better text visibility */
     padding: 10px;
     /* Optional: for some spacing around the text */
+}
+
+@media (min-width: 800px) {
+    .overlay-text {
+        font-size: 80px;
+    }
 }

@@ -6,7 +6,7 @@ import ImageWithTextOverlay from "./ImageWithTextOverlay"
 
 import "./Overlay.css"
 
-export default ({ children, onClose, imgLandscapeSrc, imgPortraitSrc,  imgOverlayText, imgAlt }) => {
+export default ({ children, onClose, imgLandscapeSrc, imgPortraitSrc, imgOverlayText, imgAlt }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isCloseVisible, setIsCloseVisible] = useState(false); // State for Close visibility
 
@@ -41,11 +41,14 @@ export default ({ children, onClose, imgLandscapeSrc, imgPortraitSrc,  imgOverla
             alt={imgAlt}
           />
         </div>
-        <div style={{ marginBottom: "50px" }} />
         <div
-          className="overlay__inner__content"
+          className="overlay_inner_content_container"
         >
-          {children}
+          <div
+            className="overlay__inner__content"
+          >
+            {children}
+          </div>
         </div>
         <span className="overlay__close" style={{ display: isCloseVisible ? 'block' : 'none' }}>
           <Close onClick={handleClose} />
