@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import './ImageWithTextOverlay.css';
 
 const ImageWithTextOverlay = ({ landscapeSrc, portraitSrc, alt, overlayText }) => {
-    const [isLandscape, setIsLandscape] = useState(window.innerWidth > window.innerHeight);
+    // Initialize with a default value
+    const [isLandscape, setIsLandscape] = useState(true);
 
     useEffect(() => {
+        // Update the state inside the useEffect hook
+        setIsLandscape(window.innerWidth > window.innerHeight);
+
         const handleResize = () => {
             setIsLandscape(window.innerWidth > window.innerHeight);
         };
