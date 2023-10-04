@@ -67,41 +67,44 @@ const ResidencyPage = ({ data, location, children }) => {
       <SEO title="Research Location" />
       {children}
       <div
-        className="residency-page__heading"
+        className="residency-page__container"
       >
         <div
-          role="button"
-          tabIndex={0}
-          onClick={() => handleAboutClick(isExpandedAbout)}
-          onKeyDown={(e) => e.key === 'Enter' && handleAboutClick(isExpandedAbout)}
-          style={{ cursor: "pointer" }}
-          className={isExpandedAbout ? "residency-page__heading-button-expanded" : "residency-page__heading-button"}
+          className="residency-page__heading"
         >
-          SHOCK FOREST GROUP
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={() => handleAboutClick(isExpandedAbout)}
+            onKeyDown={(e) => e.key === 'Enter' && handleAboutClick(isExpandedAbout)}
+            style={{ cursor: "pointer" }}
+            className={isExpandedAbout ? "residency-page__heading-button-expanded" : "residency-page__heading-button"}
+          >
+            SHOCK FOREST GROUP
+          </div>
+          {isExpandedAbout && <div className="residency-page__about" dangerouslySetInnerHTML={{ __html: aboutHtml }} />}
         </div>
-        {isExpandedAbout && <div className="residency-page__about" dangerouslySetInnerHTML={{ __html: aboutHtml }} />}
-      </div>
-      <div className="residency-page__list">
-        <ul className="residency-page__list">
-          {workItems.map((el, index) => (
-            <li className="residency-page__item" key={index}>
-              <div
-                role="button"
-                tabIndex={0}
-                onClick={() => handleLinkClick(index)}
-                onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(index)}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="residency-page__item__button top-0 left-0 right-0 bottom-0 justify-left white">
-                  <div className="pr2">
-                    {String(workItems.length - index).padStart(2, '0')}.
-                  </div>
-                  <div>
-                    {el.title}
+        <div className="residency-page__list">
+          <ul className="residency-page__list">
+            {workItems.map((el, index) => (
+              <li className="residency-page__item" key={index}>
+                <div
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => handleLinkClick(index)}
+                  onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(index)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <div className="residency-page__item__button top-0 left-0 right-0 bottom-0 justify-left white">
+                    <div className="pr2">
+                      {String(workItems.length - index).padStart(2, '0')}.
+                    </div>
+                    <div>
+                      {el.title}
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* <a
+                {/* <a
               href={`/dynamic/${index}`}
               onClick={(e) => {
                 e.preventDefault();
@@ -111,7 +114,7 @@ const ResidencyPage = ({ data, location, children }) => {
                 {String(workItems.length - index).padStart(2, '0')}. {el.title}
               </p>
             </a> */}
-              {/* <Link
+                {/* <Link
               to={`/${index}`}
               state={{ subPageId: index }}
               onClick={(e) => {
@@ -120,11 +123,12 @@ const ResidencyPage = ({ data, location, children }) => {
               }}
             > */}
 
-              {/* </Link> */}
-              {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }} />}
-            </li>
-          ))}
-        </ul>
+                {/* </Link> */}
+                {expandedId === index && <div className="residency-page__content" dangerouslySetInnerHTML={{ __html: el.html }} />}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   )

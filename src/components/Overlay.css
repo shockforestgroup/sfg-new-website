@@ -23,7 +23,7 @@ a:active {
   z-index: 1;
   /* top: 125px; */
   /* left: 10px; */
-  width: 97vw;
+  width: 98.5vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -67,7 +67,7 @@ a:active {
 
 @media (min-width: 800px) {
   .overlay {
-    width: 97vw;
+    width: 98.5vw;
     height: 97vh;
   }
   .overlay__close {
