@@ -14,7 +14,7 @@ const TheEntity = () => {
   }, []);
 
   const gatsbyDisableBodyScroll = (event) => {
-    document.getElementsByTagName("html")[0].style = "";
+    document.getElementsByTagName("html")[0].style = "hidden";
     disableBodyScroll(document.body);
   };
 
