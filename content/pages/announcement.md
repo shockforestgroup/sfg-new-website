@@ -6,7 +6,7 @@ This November, the Shock Forest Group will be opening its practices to new membe
 
 No prior education is needed, as there will be workshops where participants will learn how to record, edit and mix the radio episodes, and the creation of the broadcast will be done collectively. 	
 
-The workshop will be held from 13 November-3 December 2023 @ Van Abbemuseum in Eindhoven on these dates:
+The workshop will be held from 15 November-3 December 2023 @ Van Abbemuseum in Eindhoven on these dates:
 
 * Wednesday 15 November, 19:00 - 21:00  
 * Saturday 18 November, 12:00 - 17:00
@@ -19,6 +19,7 @@ The workshop will be held from 13 November-3 December 2023 @ Van Abbemuseum in E
 * Sunday 3 November 12:00 - 17:00
 
 The final works will be shared through radio broadcasting, publishing and archiving via offline and online mediums.
+
 Shock Forest Group hopes to attract a diverse group of participants that reflect the multitudes of its own collective. A commitment to the full three weekends of workshopping is required.
 
-[Sign up for the workshops](https://forms.gle/opdo1gb72DsssYDE7).
+[](https://forms.gle/opdo1gb72DsssYDE7)Signup form will be placed online soon.
