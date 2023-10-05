@@ -1,6 +1,6 @@
 ---
 title: Three-Week Workshop on Radio and Collective Research at Van Abbemuseum in
-  Eindhoven, 15 November - 3 December
+  Eindhoven, 15 November - 3 December 2023
 ---
 Shock Forest Group returns to Eindhoven for their second part of the Cosmic Radio project. This November, Shock Forest Group invites new participants to join them in their work at Van Abbemuseum to collectively create a radio program and form a ‘New Temporary Shock Forest Group’. [Apply here](https://forms.gle/RwrVanRAWN5w8vZB7).
 
