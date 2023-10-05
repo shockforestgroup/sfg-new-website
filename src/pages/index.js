@@ -44,7 +44,9 @@ const Announcement = ({ data, location }) => {
       imgAlt={"SFG announcement"}
     >
       <SEO title="Home" />
-
+      <h2>
+        {data?.announcement?.frontmatter.title}
+      </h2>
       {<div dangerouslySetInnerHTML={{ __html: data?.announcement?.html }} />}   
 
     </ResidencyPageWithOverlay>
