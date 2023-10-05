@@ -2,7 +2,7 @@
 title: Three-Week Shock Forest Group Workshop on Radio and Collective Research
   at Van Abbemuseum in Eindhoven
 ---
-Shock Forest Group returns to Eindhoven for their second part of the Cosmic Radio project. This November, Shock Forest Group invites new participants to join them in their work at Van Abbemuseum to collectively create a radio program and form a ‘New Temporary Shock Forest Group’.
+Shock Forest Group returns to Eindhoven for their second part of the Cosmic Radio project. This November, Shock Forest Group invites new participants to join them in their work at Van Abbemuseum to collectively create a radio program and form a ‘New Temporary Shock Forest Group’. [Apply here](https://forms.gle/RwrVanRAWN5w8vZB7).
 
 The syllabus for the three-week workshop will revolve around the recurrent themes from their research and guided by the examples from their work. How to engage with material and ghostly traces of the past? How to cultivate a collective sense of trust and safety? How to oppose neoliberal practices, while working within contexts that are shaped by capitalist forces? 
 
@@ -26,4 +26,4 @@ Shock Forest Group aims to work together with hopes to attract a diverse group o
 
 Participation in the workshops is **free of charge.** The workshops are **limited to 15 participants. Application deadline is October 27 at 8PM CET**.
 
-[](https://forms.gle/opdo1gb72DsssYDE7)Signup form will follow soon.
+[](https://forms.gle/opdo1gb72DsssYDE7)[Apply here](https://forms.gle/RwrVanRAWN5w8vZB7).
