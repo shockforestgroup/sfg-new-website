@@ -23,7 +23,7 @@ const Announcement = ({ data, location }) => {
     <br />,
     "with SFG",
     <br />,
-    "↓"];
+    "▽"];
 
   React.useEffect(() => {
     gatsbyEnableBodyScroll();

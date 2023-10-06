@@ -4,8 +4,9 @@
 
 @font-face {
   font-family: "Helvetica Narrow CE Regular";
-  src: url("/fonts/HVN_CE.TTF") format("truetype"),
-       url("/fonts/HVNCE.woff2") format("woff2");
+  src: url("/fonts/HVN_CE.otf") format("opentype"),
+       url("/fonts/HVN_CE.woff") format("woff"),
+       url("/fonts/HVN_CE.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   
