@@ -16,8 +16,16 @@
   font-family: "Helvetica Narrow CE Bold";
   src: url("/fonts/HVNB_CE.TTF") format("truetype"),
        url("/fonts/HVNBCE.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Narrow CE Oblique";
+  src: url("/fonts/HelveticaNarrowCE-Oblique.otf") format("opentype"),
+       url("/fonts/HelveticaNarrowCE-Oblique.woff2") format("woff2");
+  font-weight: normal;
+  font-style: oblique;
 }
 
 html,
