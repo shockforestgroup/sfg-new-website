@@ -26,8 +26,10 @@ The workshop will be held from **15 November—3 December 2023 at Van Abbemuseum
 
 Shock Forest Group aims to work together with hopes to attract a diverse group of new participants that reflect the multitudes of its own collective. A commitment to the aforementioned dates and times during the full three weekends of workshopping is required. 
 
-Participation in the workshops is **free of charge.** The workshops are **limited to 15 participants. Application deadline is October 27 at 8PM CET**.
+Participation in the workshops is **free of charge.** The workshops are **limited to 15 participants.** 
 
-A more detailed description of the workshops will follow soon.
+**Application deadline is October 27 at 8PM CET**. Selected participants will be contacted before November 6th.\
+\
+[Apply here](https://forms.gle/RwrVanRAWN5w8vZB7).
 
-[](https://forms.gle/opdo1gb72DsssYDE7)[Apply here](https://forms.gle/RwrVanRAWN5w8vZB7).
+A more detailed description of the workshops will follow soon.[](https://forms.gle/opdo1gb72DsssYDE7)[](https://forms.gle/RwrVanRAWN5w8vZB7)
