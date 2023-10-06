@@ -33,7 +33,8 @@ dd {
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   line-height: 1.2;
   background-color: black;
 }
@@ -56,7 +57,7 @@ img {
 }
 
 /* Natural flow and rhythm in articles by default */
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
