@@ -28,7 +28,7 @@ Shock Forest Group hopes to attract a diverse group of new participants that ref
 
 Participation in the workshops is **free of charge.** The workshops are **limited to 15 participants.** 
 
-**Application deadline is October 27 at 8PM CET**. Selected participants will be contacted before November 6th.\
+**Application deadline is October 27 at 8PM CET**. Selected participants will be contacted before November 3rd.\
 \
 [Apply here](https://forms.gle/RwrVanRAWN5w8vZB7).
 
