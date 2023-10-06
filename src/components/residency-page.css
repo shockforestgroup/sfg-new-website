@@ -10,7 +10,7 @@
   --unnamed-font-size-60: 26px;
   --unnamed-character-spacing-0-38: 0.38px;
   --unnamed-character-spacing-0-5: 0.5px;
-  --unnamed-character-spacing-1-2: 1.2px;
+  --unnamed-character-spacing-1-2: 0.9px;
   --unnamed-line-spacing-17-5: 22px;
   --unnamed-line-spacing-25: 25px;
   --unnamed-line-spacing-30: 30px;
@@ -81,13 +81,13 @@
 
 .residency-page__content {
   max-width: 45rem;
-  margin-top: 10px;
+  margin-top: calc(1.15 * var(--unnamed-font-size-15));
+  margin-bottom: calc(3 * var(--unnamed-font-size-15));
   left: 0;
   font-family: var(--unnamed-font-family-helvetica-narrow-ce);
   font-weight: normal;
   font-size: var(--unnamed-font-size-15);
-  letter-spacing: var(--unnamed-character-spacing-0-38);
-  line-height: var(--unnamed-line-spacing-17-5);
+  line-height:  calc(1.15 * var(--unnamed-font-size-15));
   color: var(--unnamed-color-ffffff);
   text-align: left;
 }
