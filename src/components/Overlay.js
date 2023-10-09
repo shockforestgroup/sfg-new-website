@@ -21,7 +21,12 @@ export default ({ children, onClose, imgLandscapeSrc, imgPortraitSrc, imgOverlay
   };
 
   const handleScroll = () => {
-    setIsCloseVisible(true); // Set Close to visible when overlay content is scrolled
+    if (overlayContentRef.current) {
+      const halfwayPoint = window.innerHeight / 4;
+      if (overlayContentRef.current.scrollTop >= halfwayPoint) {
+        setIsCloseVisible(true); // Set Close to visible after scrolling half of the content
+      }
+    }
   };
 
   useEffect(() => {
