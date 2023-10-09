@@ -43,7 +43,7 @@ const Announcement = ({ data, location }) => {
       imgOverlayText={text}
       imgAlt={"SFG announcement"}
     >
-      <SEO title="Home" />
+      <SEO />
       <h2>
         {data?.announcement?.frontmatter.title}
       </h2>

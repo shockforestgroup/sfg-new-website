@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Link, navigate } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
 
 import "./residency-page.css"
 
@@ -64,7 +63,6 @@ const ResidencyPage = ({ data, location, children }) => {
 
   return (
     <div className="residency-page">
-      <SEO title="Research Location" />
       {children}
       <div
         className="residency-page__container"

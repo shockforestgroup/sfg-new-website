@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `SFG`,
-    description: `Shock Forest Group`,
-    author: `@alexabruck`,
+    title: `Shock Forest Group`,
+    description: `Shock Forest Group is an experiment in presence, open research and improvisation, that involves opportunities for community engagement, public performance, collective improvisation, and other forms of experiments in radical presence.`,
+    author: `@jelkro`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
