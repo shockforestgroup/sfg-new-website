@@ -24,15 +24,36 @@ export default ({ children, onClose, imgLandscapeSrc, imgPortraitSrc, imgOverlay
     setIsCloseVisible(true); // Set Close to visible when overlay content is scrolled
   };
 
+  useEffect(() => {
+    const handleDocumentClick = () => {
+      if (overlayContentRef.current) {
+        const newScrollPosition = overlayContentRef.current.scrollTop + window.innerHeight;
+        overlayContentRef.current.scrollTo({
+          top: newScrollPosition,
+          behavior: 'smooth'
+        });
+      }
+      setIsCloseVisible(true); // Set Close to visible
+    };
+
+    document.addEventListener('click', handleDocumentClick);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, []);
+
   if (!isVisible) return null;
 
   return (
-    <div className="overlay"
-      ref={overlayContentRef}
-      onScroll={handleScroll} // Add onScroll event listener
-    >
+    <div className="overlay">
       <div className="overlay__inner__transp-layer" />
-      <div className="overlay__inner">
+      <div
+        className="overlay__inner"
+        ref={overlayContentRef}
+        onScroll={handleScroll} // Add onScroll event listener
+      >
         <div>
           <ImageWithTextOverlay
             landscapeSrc={imgLandscapeSrc}

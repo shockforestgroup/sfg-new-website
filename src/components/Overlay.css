@@ -23,7 +23,7 @@ a:active {
   z-index: 1;
   /* top: 125px; */
   /* left: 10px; */
-  width: 98.5vw;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -31,7 +31,9 @@ a:active {
 .overlay__inner {
   position: relative;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto; /* Make it scrollable */ 
+  /* max-height: calc(100vh - 100px); */
+
 }
 
 .overlay_inner_content_container {
@@ -73,7 +75,7 @@ a:active {
 
 @media (min-width: 800px) {
   .overlay {
-    width: 98.5vw;
+    width: 100vw;
     height: 97vh;
   }
   .overlay__close {
