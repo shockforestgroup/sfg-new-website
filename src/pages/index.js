@@ -35,21 +35,24 @@ const Announcement = ({ data, location }) => {
   };
 
   return (
-    <ResidencyPageWithOverlay
-      data={data}
-      location={location}
-      imgLandscapeSrc={"/assets/DrawingLandscapeNoBackground-cosmicRadio.svg"}
-      imgPortraitSrc={"/assets/DrawingPortraitNoBackground-cosmicRadio.svg"}
-      imgOverlayText={text}
-      imgAlt={"SFG announcement"}
-    >
+    <>
       <SEO />
-      <h2>
-        {data?.announcement?.frontmatter.title}
-      </h2>
-      {<div dangerouslySetInnerHTML={{ __html: data?.announcement?.html }} />}   
+      <ResidencyPageWithOverlay
+        data={data}
+        location={location}
+        imgLandscapeSrc={"/assets/DrawingLandscapeNoBackground-cosmicRadio.svg"}
+        imgPortraitSrc={"/assets/DrawingPortraitNoBackground-cosmicRadio.svg"}
+        imgOverlayText={text}
+        imgAlt={"SFG announcement"}
+      >
 
-    </ResidencyPageWithOverlay>
+        <h2>
+          {data?.announcement?.frontmatter.title}
+        </h2>
+        {<div dangerouslySetInnerHTML={{ __html: data?.announcement?.html }} />}
+
+      </ResidencyPageWithOverlay>
+    </>
   )
 }
 
