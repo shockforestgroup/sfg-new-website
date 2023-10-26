@@ -5,7 +5,7 @@
 
 .overlay-text {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -21,5 +21,11 @@
 @media (min-width: 800px) {
     .overlay-text {
         font-size: 80px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .overlay-text {
+        font-size: 140px;
     }
 }

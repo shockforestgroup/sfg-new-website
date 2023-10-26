@@ -25,7 +25,7 @@ const ImageWithTextOverlay = ({ landscapeSrc, portraitSrc, alt, overlayText }) =
             style={{
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center',
+                alignItems: 'flex-start',
                 height: '100vh',
                 overflow: 'hidden'
             }}>
@@ -33,7 +33,7 @@ const ImageWithTextOverlay = ({ landscapeSrc, portraitSrc, alt, overlayText }) =
                 src={isLandscape ? landscapeSrc : portraitSrc}
                 alt={alt}
                 className="image"
-                style={{ height: "100vh", width: "auto", objectFit: 'cover' }}
+                style={{ height: "95vh", width: "auto", objectFit: 'cover' }}
             />
             {overlayText && <div className="overlay-text">{overlayText}</div>}
         </div>

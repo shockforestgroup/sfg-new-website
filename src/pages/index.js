@@ -11,19 +11,7 @@ import 'tachyons';
 
 const Announcement = ({ data, location }) => {
 
-  let text = ["SIGN UP",
-    <br />,
-    "for",
-    <br />,
-    "COSMIC",
-    <br />,
-    "RADIO",
-    <br />,
-    "workshop",
-    <br />,
-    "with SFG",
-    <br />,
-    "▽"];
+  let text = "";
 
   React.useEffect(() => {
     gatsbyEnableBodyScroll();
@@ -40,8 +28,8 @@ const Announcement = ({ data, location }) => {
       <ResidencyPageWithOverlay
         data={data}
         location={location}
-        imgLandscapeSrc={"/assets/DrawingLandscapeNoBackground-cosmicRadio.svg"}
-        imgPortraitSrc={"/assets/DrawingPortraitNoBackground-cosmicRadio.svg"}
+        imgLandscapeSrc={"/assets/Desktop_CosmicRadioWorkshop.svg"}
+        imgPortraitSrc={"/assets/Mobile_CosmicRadioWorkshop.svg"}
         imgOverlayText={text}
         imgAlt={"SFG announcement"}
       >
