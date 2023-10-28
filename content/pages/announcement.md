@@ -15,12 +15,12 @@ No prior education is needed, as there will be workshops where participants will
 The workshop will be held from **15 November—3 December 2023 at Van Abbemuseum in Eindhoven** on the following dates:
 
 * Wednesday 15 November, 19:00 - 21:00 
-* Saturday 18 November, 12:30 - 17:30
+* Saturday 18 November, 12:00 - 17:00
 * Sunday 19 November 12:00 - 17:00
-* Wednesday 22 November 19:00 - 21:00
-* Saturday 25 November 12:30 - 17:30
+* Wednesday 22 November 12:30 - 17:30
+* Saturday 25 November 12:00 - 17:00
 * Sunday 26 November 12:00 - 17:00
-* Wednesday 29 November, 19:00 - 21:00 
+* Wednesday 29 November, 12:30 - 17:30 
 * Saturday 2 December 12:00 - 17:00
 * Sunday 3 December 12:00 - 17:00
 
@@ -28,7 +28,7 @@ Shock Forest Group hopes to attract a diverse group of new participants that ref
 
 Participation in the workshops is **free of charge.** The workshops are **limited to 15 participants.** 
 
-**Application deadline is November 3d at 8PM CET**. Selected participants will be contacted before November 6th.\
+**Application deadline is November 3rd at 8PM CET**. Selected participants will be contacted before November 6th.\
 \
 [Apply here](https://forms.gle/RwrVanRAWN5w8vZB7).
 
