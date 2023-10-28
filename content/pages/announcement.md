@@ -24,7 +24,7 @@ The workshop will be held from **15 November—3 December 2023 at Van Abbemuseum
 * Saturday 2 December 12:00 - 17:00
 * Sunday 3 December 12:00 - 17:00
 
-Shock Forest Group hopes to attract a diverse group of new participants that reflect the multitudes of its own collective. A commitment to the aforementioned dates and times during the full three weekends of workshopping is required. 
+Shock Forest Group hopes to attract a diverse group of new participants that reflect the multitudes of its own collective. **We ask for a commitment to the aforementioned dates and times during the full three weekends of workshopping. ***
 
 Participation in the workshops is **free of charge.** The workshops are **limited to 15 participants.** 
 
@@ -32,4 +32,6 @@ Participation in the workshops is **free of charge.** The workshops are **limite
 \
 [Apply here](https://forms.gle/RwrVanRAWN5w8vZB7).
 
-A more detailed description of the workshops will follow soon.[](https://forms.gle/opdo1gb72DsssYDE7)[](https://forms.gle/RwrVanRAWN5w8vZB7)
+A more detailed description of the workshops will follow soon.[](https://forms.gle/opdo1gb72DsssYDE7)[](https://forms.gle/RwrVanRAWN5w8vZB7)\
+\
+* In case you're not able to attend all workshopping days, please send an email to info@shockforest.group so we can explore options.
