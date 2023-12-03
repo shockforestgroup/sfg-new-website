@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import ResidencyPageWithOverlay from "../components/residency-pageWithOverlay"
+import ResidencyPage from "../components/residency-page"
 import SEO from "../components/Seo"
 import ImageWithTextOverlay from "../components/ImageWithTextOverlay"
 import Overlay from "../components/Overlay"
@@ -25,7 +26,13 @@ const Announcement = ({ data, location }) => {
   return (
     <>
       <SEO />
-      <ResidencyPageWithOverlay
+      <ResidencyPage
+        data={data}
+        location={location}
+      >
+      </ResidencyPage>
+
+      {/* <ResidencyPageWithOverlay
         data={data}
         location={location}
         imgLandscapeSrc={"/assets/Desktop_CosmicRadioWorkshop.svg"}
@@ -39,7 +46,7 @@ const Announcement = ({ data, location }) => {
         </h2>
         {<div dangerouslySetInnerHTML={{ __html: data?.announcement?.html }} />}
 
-      </ResidencyPageWithOverlay>
+      </ResidencyPageWithOverlay> */}
     </>
   )
 }
